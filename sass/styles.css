@@ -10,6 +10,13 @@ body {
 
 #cardapio {
   font-size: 1.25rem;
+  color: #fff;
+}
+#cardapio .table {
+  color: #fff;
+}
+#cardapio .table-hover tbody tr:hover {
+  color: #eaeaea;
 }
 #cardapio span {
   font-family: "Troika", "Montserrat", sans-serif;
