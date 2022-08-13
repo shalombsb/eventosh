@@ -1,0 +1,125 @@
+
+  $turquesa:#00AE9D;
+  $azul:#013641;
+  $verdem:#8CC526;
+  $verdec:#bfd730;
+  $roxo:#49479D;
+  $branco:#fff;
+  $cinzam:#c5c5c5;
+  $cinzac:#eaeaea;
+  $transparente:rgba(0,0,0,0);
+
+  
+
+  body {
+    font-family: 'Asap', sans-serif; 
+    
+  }
+  html{
+    background: $azul;
+    color: $branco;
+  }
+
+
+
+
+.concred{
+
+  /* Geral */
+
+  transition: 0.5s all;
+
+  p{
+    letter-spacing: 1px;
+  }
+  .dad{
+    position: relative;
+  }
+  .son{
+    position: absolute;
+  }
+
+    
+    /* Sections */
+
+    .nav-section{
+      background: $azul;
+      border-bottom:2px solid $verdem;
+      
+    }
+
+    #banner{
+      background: $azul;
+
+      .onda{
+        img{
+
+          @media (max-width:1500px) {
+            width: 80%;
+          }
+          @media (max-width:1200px) {
+            width: 70%;
+          }
+          @media (max-width:992px) {
+            width: 60%;
+          }
+          @media (max-width:575px) {
+            width: 70%;
+          }
+        }
+      }
+      
+      .right{
+        top: 0;
+        right: 0;
+        max-width: 597px;
+        width: 70%;
+      }
+      .left{
+        top: 0;
+        left: 0;
+        max-width: 210px;
+        width: 30%;
+      }
+    }
+
+    #section1{
+      background: $turquesa;
+      color: $branco;
+
+      .text{
+
+        p{
+          font-size: 1.5rem;
+        }
+      }
+      .video{
+        font-weight: bold;
+        p{
+          color:$azul;
+        }
+      }
+
+      .sicoob{
+
+        p{
+          font-weight: bold;
+          span{
+            color:$azul;
+          }
+        }
+      }
+
+    }
+    
+
+    
+
+    #footer{
+      background: $azul;
+      color: $branco;
+    }
+
+
+
+}
