@@ -1,85 +1,16 @@
+@font-face {
+  font-family: "troika";
+  src: url("troika.otf") format("truetype");
+}
 body {
-  font-family: "Asap", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-html {
-  background: #013641;
+html, #banner, #footer {
+  background: #334d24;
   color: #fff;
 }
 
-.concred {
-  /* Geral */
-  transition: 0.5s all;
-  /* Sections */
-}
-.concred p {
-  letter-spacing: 1px;
-}
-.concred .dad {
-  position: relative;
-}
-.concred .son {
-  position: absolute;
-}
-.concred .nav-section {
-  background: #013641;
-  border-bottom: 2px solid #8CC526;
-}
-.concred #banner {
-  background: #013641;
-}
-@media (max-width: 1500px) {
-  .concred #banner .onda img {
-    width: 80%;
-  }
-}
-@media (max-width: 1200px) {
-  .concred #banner .onda img {
-    width: 70%;
-  }
-}
-@media (max-width: 992px) {
-  .concred #banner .onda img {
-    width: 60%;
-  }
-}
-@media (max-width: 575px) {
-  .concred #banner .onda img {
-    width: 70%;
-  }
-}
-.concred #banner .right {
-  top: 0;
-  right: 0;
-  max-width: 597px;
-  width: 70%;
-}
-.concred #banner .left {
-  top: 0;
-  left: 0;
-  max-width: 210px;
-  width: 30%;
-}
-.concred #section1 {
-  background: #00AE9D;
-  color: #fff;
-}
-.concred #section1 .text p {
-  font-size: 1.5rem;
-}
-.concred #section1 .video {
-  font-weight: bold;
-}
-.concred #section1 .video p {
-  color: #013641;
-}
-.concred #section1 .sicoob p {
-  font-weight: bold;
-}
-.concred #section1 .sicoob p span {
-  color: #013641;
-}
-.concred #footer {
-  background: #013641;
-  color: #fff;
+.troika {
+  font-family: "Troika", "Montserrat", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
