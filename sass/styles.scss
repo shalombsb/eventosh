@@ -13,11 +13,24 @@
 
   body {
     font-family: 'Montserrat', sans-serif; 
-    
-  }
-  html, #banner, #footer{
     background: $verde;
     color: $branco;
+    
+  }
+  #cardapio{
+    font-size: 1.25rem;
+    span{
+      font-family: 'Troika', 'Montserrat', sans-serif; 
+      width:75px;
+      display: inline-block;
+    }
+    .small{
+      font-family: 'Montserrat', sans-serif; 
+      width: auto;
+      display: inline;
+    }
+
+    
   }
 
 
