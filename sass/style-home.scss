@@ -1,0 +1,30 @@
+@import url(styles.scss);
+
+$azul:var(--azul);
+  $amarelo:var(--amarelo);
+  $amareloc:var(--amareloc);
+  $branco:var(--branco);
+  $cinzac:var(--cinzac);
+  $cinzam:var(--cinzam);
+  $cinza:var(--cinza);
+  $preto:var(--preto);
+  $transparente:var(--transparente);
+
+#menu{
+  .nav-link{
+    color: $azul!important;
+
+    &.active{
+      filter: brightness(0.8);
+    }
+  }
+}
+
+
+
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,12 @@
+@import url(styles.scss);
+#menu .nav-link {
+  color: var(--azul) !important;
+}
+#menu .nav-link.active {
+  filter: brightness(0.8);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}/*# sourceMappingURL=style-home.css.map */

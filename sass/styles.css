@@ -47,7 +47,7 @@ body {
   width: 100vw;
   font-family: "Made Tommy", sans-serif;
   overflow-x: hidden;
-  color: var(--amarelo);
+  color: var(--azul) !important;
 }
 
 p {
