@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Made Tommy';
+    src: url('made_tommy/MADE-Tommy-Soft-Thin.otf') format('otf');
+    font-weight: 300;
+    font-style: thin;
+}
+
+@font-face {
+    font-family: 'Made Tommy';
+    src: url('made_tommy/MADE-Tommy-Soft-Light.otf') format('otf');
+    font-weight: 400;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Made Tommy';
+    src: url('made_tommy/MADE-Tommy-Soft-Regular.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Made Tommy';
+    src: url('made_tommy/MADE-Tommy-Soft-Medium.otf') format('otf');
+    font-weight: 600;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'Made Tommy';
+    src: url('made_tommy/MADE-Tommy-Soft-Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Made Tommy';
+    src: url('made_tommy/MADE-Tommy-Soft-ExtraBold.otf') format('otf');
+    font-weight: 800;
+    font-style: extrabold;
+}
+
+@font-face {
+    font-family: 'Made Tommy';
+    src: url('made_tommy/MADE-Tommy-Soft-Black.otf') format('otf');
+    font-weight: 900;
+    font-style:black;
+}
+
+@font-face {
+    font-family: 'Avant';
+    src: url('Avant-Garde.otf') format('otf');
+    font-weight: 500;
+    font-style:normal;
+}

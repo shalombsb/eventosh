@@ -1,36 +1,252 @@
-@font-face {
-  font-family: "troika";
-  src: url("troika.otf") format("truetype");
+@charset "UTF-8";
+:root {
+  --azul:#32a0ad;
+  --amarelo:#f29f05;
+  --amareloc:#fac054;
+  --branco:#fff;
+  --cinzac:#F9F9F9;
+  --cinzam:#D1D1D1;
+  --cinza:#5E5E5E;
+  --preto:#000;
+  --transparente:rgba(0,0,0,0);
+  --font-geral:1.25rem;
 }
+
+/* 
+--------------------------------
+GERAIS
+--------------------------------
+*/
+* {
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  height: 0px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
-  background: #334d24;
-  color: #fff;
+  width: 100vw;
+  font-family: "Made Tommy", sans-serif;
+  overflow-x: hidden;
+  color: var(--amarelo);
 }
 
-#cardapio {
-  font-size: 1.25rem;
-  color: #fff;
-}
-#cardapio .table {
-  color: #fff;
-}
-#cardapio .table-hover tbody tr:hover {
-  color: #eaeaea;
-}
-#cardapio span {
-  font-family: "Troika", "Montserrat", sans-serif;
-  width: 75px;
-  display: inline-block;
-}
-#cardapio .small {
-  font-family: "Montserrat", sans-serif;
-  width: auto;
-  display: inline;
-  font-style: italic;
-  font-size: 60%;
+p {
+  font-size: var(--font-geral);
 }
 
-.troika {
-  font-family: "Troika", "Montserrat", sans-serif;
+/* COR DAS FONTES */
+.c-azul {
+  color: var(--azul) !important;
+}
+.c-amarelo {
+  color: var(--amarelo) !important;
+}
+.c-amareloc {
+  color: var(--amareloc) !important;
+}
+.c-branco {
+  color: var(--branco) !important;
+}
+.c-cinza {
+  color: var(--cinza) !important;
+}
+.c-cinzac {
+  color: var(--cinzac) !important;
+}
+.c-cinzam {
+  color: var(--cinzam) !important;
+}
+.c-preto {
+  color: var(--preto) !important;
+}
+
+/* COR DOS FUNDOS */
+.b-azul {
+  background-color: var(--azul) !important;
+}
+.b-amarelo {
+  background-color: var(--amarelo) !important;
+}
+.b-amareloc {
+  background-color: var(--amareloc) !important;
+}
+.b-branco {
+  background-color: var(--branco) !important;
+}
+.b-cinza {
+  background-color: var(--cinza) !important;
+}
+.b-cinzac {
+  background-color: var(--cinzac) !important;
+}
+.b-cinzam {
+  background-color: var(--cinzam) !important;
+}
+.b-preto {
+  background-color: var(--preto) !important;
+}
+
+/* COR DA BORDA */
+/* PESO DA BORDA */
+.border-azul {
+  border-color: var(--azul) !important;
+}
+.border-amarelo {
+  border-color: var(--amarelo) !important;
+}
+.border-amareloc {
+  border-color: var(--amareloc) !important;
+}
+.border-branco {
+  border-color: var(--branco) !important;
+}
+.border-cinza {
+  border-color: var(--cinza) !important;
+}
+.border-cinzac {
+  border-color: var(--cinzac) !important;
+}
+.border-cinzam {
+  border-color: var(--cinzam) !important;
+}
+.border-preto {
+  border-color: var(--preto) !important;
+}
+.border-1 {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-2 {
+  border-style: solid;
+  border-width: 2px;
+}
+.border-3 {
+  border-style: solid;
+  border-width: 3px;
+}
+.border-4 {
+  border-style: solid;
+  border-width: 4px;
+}
+.border-5 {
+  border-style: solid;
+  border-width: 5px;
+}
+.border-radius-05 {
+  border-radius: 0.5rem;
+}
+.border-radius-075 {
+  border-radius: 0.75rem;
+}
+.border-radius-1 {
+  border-radius: 1rem;
+}
+.border-radius-15 {
+  border-radius: 1.5rem;
+}
+.border-radius-2 {
+  border-radius: 2rem;
+}
+.border-radius-25 {
+  border-radius: 2.5rem;
+}
+
+/* PESO DAS FONTES */
+.fw-100 {
+  font-weight: 100 !important;
+}
+.fw-200 {
+  font-weight: 200 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+/* ALINHAMENTO */
+.s-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.h-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* BOTÕES */
+.btn-primary {
+  font-size: var(--font-geral);
+  border-color: var(--azul);
+  background-color: var(--azul);
+  color: var(--branco);
+  transition: 0.5s all ease-in-out;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
+  background-color: var(--amarelo);
+}
+.btn-primary:focus-visible {
+  outline: var(--amareloc) auto 1px;
+}
+.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem var(--amareloc);
+}
+
+.btn-outline-primary {
+  font-size: var(--font-geral);
+  border-color: var(--azul);
+  color: var(--amarelo);
+  transition: 0.5s all ease-in-out;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle, .btn-outline-primary:hover {
+  background-color: var(--azul);
+  border-color: var(--azul);
+  color: var(--branco);
+  font-size: calc(var(--font-geral) + 0.1rem);
+}
+.btn-outline-primary:focus-visible {
+  outline: var(--amareloc) auto 1px;
+}
+.btn-outline-primary.focus, .btn-outline-primary:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem var(--amareloc) !important;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,50 +1,287 @@
 
 
-  $verde:#334d24;
-  $branco:#fff;
-  $cinzam:#c5c5c5;
-  $cinzac:#eaeaea;
-  $transparente:rgba(0,0,0,0);
+  $azul:var(--azul);
+  $amarelo:var(--amarelo);
+  $amareloc:var(--amareloc);
+  $branco:var(--branco);
+  $cinzac:var(--cinzac);
+  $cinzam:var(--cinzam);
+  $cinza:var(--cinza);
+  $preto:var(--preto);
+  $transparente:var(--transparente);
 
-  @font-face {
-    font-family: 'troika';
-    src: url("troika.otf") format("truetype");
+  :root{
+    --azul:#32a0ad;
+    --amarelo:#f29f05;
+    --amareloc:#fac054;
+    --branco:#fff;
+    --cinzac:#F9F9F9;
+    --cinzam:#D1D1D1;
+    --cinza:#5E5E5E;
+    --preto:#000;
+    --transparente:rgba(0,0,0,0);
+    --font-geral:1.25rem;
+
+  }
+
+
+  /* 
+  --------------------------------
+  GERAIS
+  --------------------------------
+  */
+  * {
+    
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+  }
+  
+  *::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    height: 0px; /* A altura só é vista quando a rolagem é horizontal */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 0px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  html{
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   body {
-    font-family: 'Montserrat', sans-serif; 
-    background: $verde;
-    color: $branco;
-    
+    width: 100vw;
+    font-family: 'Made Tommy', sans-serif; 
+    overflow-x: hidden;
+    color: $amarelo;
   }
-  #cardapio{
-    font-size: 1.25rem;
+
+  p{
+    font-size: var(--font-geral);
+  }
+
+  
+  /* COR DAS FONTES */
+  .c-{
+
+    &azul{
+      color:$azul!important;
+    }
+    &amarelo{
+      color:$amarelo!important;
+    }
+    &amareloc{
+      color:$amareloc!important;
+    }
+    &branco{
+      color:$branco!important;
+    }
+    &cinza{
+      color:$cinza!important;
+    }
+    &cinzac{
+      color:$cinzac!important;
+    }
+    &cinzam{
+      color:$cinzam!important;
+    }
+    &preto{
+      color:$preto!important;
+    }
+  }
+
+  /* COR DOS FUNDOS */
+  .b-{
+
+    &azul{
+      background-color:$azul!important;
+    }
+    &amarelo{
+      background-color:$amarelo!important;
+    }
+    &amareloc{
+      background-color:$amareloc!important;
+    }
+    &branco{
+      background-color:$branco!important;
+    }
+    &cinza{
+      background-color:$cinza!important;
+    }
+    &cinzac{
+      background-color:$cinzac!important;
+    }
+    &cinzam{
+      background-color:$cinzam!important;
+    }
+    &preto{
+      background-color:$preto!important;
+    }
+  }
+
+  /* COR DA BORDA */
+  /* PESO DA BORDA */
+  .border-{
+    &azul{
+      border-color:$azul!important;
+    }
+    &amarelo{
+      border-color:$amarelo!important;
+    }
+    &amareloc{
+      border-color:$amareloc!important;
+    }
+    &branco{
+      border-color:$branco!important;
+    }
+    &cinza{
+      border-color:$cinza!important;
+    }
+    &cinzac{
+      border-color:$cinzac!important;
+    }
+    &cinzam{
+      border-color:$cinzam!important;
+    }
+    &preto{
+      border-color:$preto!important;
+    }
+    
+    &1{
+      border-style:solid; 
+      border-width: 1px;
+    }
+    &2{
+      border-style:solid; 
+      border-width: 2px;
+    }
+    &3{
+      border-style:solid; 
+      border-width: 3px;
+    }
+    &4{
+      border-style:solid; 
+      border-width: 4px;
+    }
+    &5{
+      border-style:solid; 
+      border-width: 5px;
+    }
+
+    &radius-05{
+      border-radius: .5rem;
+    }
+    &radius-075{
+      border-radius: .75rem;
+    }
+    &radius-1{
+      border-radius: 1rem;
+    }
+    &radius-15{
+      border-radius: 1.5rem;
+    }
+    &radius-2{
+      border-radius: 2rem;
+    }
+    &radius-25{
+      border-radius: 2.5rem;
+    }
+  }
+
+  /* PESO DAS FONTES */
+  .fw{
+    &-100{
+      font-weight: 100!important;
+    }
+    &-200{
+      font-weight: 200!important;
+    }
+    &-300{
+      font-weight: 300!important;
+    }
+    &-500{
+      font-weight: 500!important;
+    }
+    &-600{
+      font-weight: 600!important;
+    }
+    &-700{
+      font-weight: 700!important;
+    }
+    &-800{
+      font-weight: 800!important;
+    }
+    &-900{
+      font-weight: 900!important;
+    }
+  }
+
+
+  /* ALINHAMENTO */
+  .s-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .v-center{
+    display: flex;
+    align-items: center;
+  }
+  .h-center{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* BOTÕES */
+  .btn-primary{
+    font-size: var(--font-geral);
+    border-color: $azul;
+    background-color: $azul;
     color: $branco;
-    .table{
+    transition: .5s all ease-in-out;
+
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+      background-color: $amarelo;
+    }
+
+    &:focus-visible{
+      outline: $amareloc auto 1px;
+    }
+
+    &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+      box-shadow: 0 0 0 0.2rem $amareloc;
+    }
+  }
+  .btn-outline-primary{
+    font-size: var(--font-geral);
+    border-color: $azul;
+    color: $amarelo;
+    transition: .5s all ease-in-out;
+
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+      background-color: $azul;
+      border-color: $azul;
       color: $branco;
-    }
-    .table-hover tbody tr:hover{
-      color: $cinzac;
-    }
-    span{
-      font-family: 'Troika', 'Montserrat', sans-serif; 
-      width:75px;
-      display: inline-block;
-    }
-    .small{
-      font-family: 'Montserrat', sans-serif; 
-      width: auto;
-      display: inline;
-      font-style: italic;
-      font-size: 60%;
+      font-size: calc(var(--font-geral) + .1rem);
     }
 
+    &:focus-visible{
+      outline: $amareloc auto 1px;
+    }
+
+    &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+      box-shadow: 0 0 0 0.2rem $amareloc!important;
     
+    }
   }
 
-
-.troika{
-  font-family: 'Troika', 'Montserrat', sans-serif; 
-    
-}
-
+  
