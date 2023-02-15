@@ -10,21 +10,3 @@ $azul:var(--azul);
   $preto:var(--preto);
   $transparente:var(--transparente);
 
-#menu{
-  .nav-link{
-    color: $azul!important;
-
-    &.active{
-      filter: brightness(0.8);
-    }
-  }
-}
-
-
-
-
-
-footer{
-  position: absolute;
-  bottom: 0;
-}

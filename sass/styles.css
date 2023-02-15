@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../fontes/stylesheet.css);
 :root {
   --azul:#32a0ad;
   --amarelo:#f29f05;
@@ -8,8 +9,8 @@
   --cinzam:#D1D1D1;
   --cinza:#5E5E5E;
   --preto:#000;
+  --sombra:#3c3c3c0d;
   --transparente:rgba(0,0,0,0);
-  --font-geral:1.25rem;
 }
 
 /* 
@@ -50,8 +51,8 @@ body {
   color: var(--azul) !important;
 }
 
-p {
-  font-size: var(--font-geral);
+.avant {
+  font-family: "Avant Garde", sans-serif;
 }
 
 /* COR DAS FONTES */
@@ -249,4 +250,36 @@ p {
 }
 .btn-outline-primary.focus, .btn-outline-primary:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem var(--amareloc) !important;
+}
+
+.card {
+  box-shadow: 0 16px 16px var(--sombra), 0 8px 8px var(--sombra), 0 4px 4px var(--sombra), 0 0 10px var(--sombra);
+}
+.card:hover {
+  border: 1px solid var(--azul);
+}
+.card .icon-card {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.card .card-footer {
+  text-align: end;
+}
+
+#menu .nav-link {
+  color: var(--azul) !important;
+}
+#menu .nav-link:hover {
+  filter: brightness(0.8);
+}
+
+#content {
+  min-height: 50vh;
+}
+
+footer {
+  position: relative;
+}
+footer .position-absolute {
+  bottom: 0;
 }/*# sourceMappingURL=styles.css.map */
