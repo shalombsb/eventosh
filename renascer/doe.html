@@ -34,10 +34,10 @@
               <div class="card-body ">
                 <img src="../images/qr-code.png" class="card-img img-fluid" style="max-width: 300px;">
                 <h5 class="card-title">Pix</h5>
-                <p id="myText" class="card-text">07.044.456/0029-01</p>
+                <p id="text-html" class="card-text">07.044.456/0029-01</p>
               </div>
               <div class="card-footer">
-                <button class="btn btn-primary" id="copy" onclick="myFunction()">Copiar</button>
+                <button class="btn btn-primary copy-html">Copiar</button>
               </div>
             </div>
           </div>
@@ -58,23 +58,28 @@
   </script>
 
   <script>
-    $("#copy").preventDefault();
+    /* -- BTN Copiar código HTML -- */
+/* -- BTN Copiar código -- */
+function copyHtmlSuccess() {
+    var textoSucesso = document.querySelector('.copy-html');
+    textoSucesso.classList.toggle('success');
+};
+function copyHTML() {
+    /* Capturar campo texto em variável */
+    var copyText = document.getElementById("text-html");
+  
+    /* Selecionar campo texto */
+    copyText.select();
+    copyText.setSelectionRange(0, 999999); /* For mobile devices */
+  
+     /* Copiar para clipboard */
+    navigator.clipboard.writeText(copyText.value);
 
-    function myFunction() {
-      debugger
-  // Get the text field
-  var copyText = document.getElementById("myText");
+    copyHtmlSuccess();
+    setTimeout(copyHtmlSuccess, 3000);
+};
 
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-      debugger
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-  debugger
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
-}
+/* -- END BTN Copiar código -- */
   </script>
 
 </body>
