@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 #cardapio .card-footer .quant {
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 #cardapio .card-footer .quant:not(:disabled):not(.disabled).active, #cardapio .card-footer .quant:not(:disabled):not(.disabled):active, .show > #cardapio .card-footer .quant.dropdown-toggle, #cardapio .card-footer .quant:hover {
   background-color: transparent;

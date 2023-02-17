@@ -24,7 +24,7 @@ $azul:var(--azul);
       justify-content: space-between;
 
       .quant{
-        line-height: 2rem;
+        line-height: 2.25rem;
 
         &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
           background-color: transparent;
