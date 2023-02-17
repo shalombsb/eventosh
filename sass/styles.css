@@ -238,13 +238,33 @@ body {
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
+  border-color: var(--amarelo);
   background-color: var(--amarelo);
 }
 .btn-primary:focus-visible {
   outline: var(--amareloc) auto 1px;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--amareloc);
+  box-shadow: 0 0 0 0rem var(--amareloc);
+}
+
+.btn-secondary {
+  font-size: var(--font-geral);
+  border-color: var(--amarelo);
+  background-color: var(--amarelo);
+  color: var(--branco);
+  transition: 0.5s all ease-in-out;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
+  border-color: var(--amarelo);
+  background-color: var(--amarelo);
+  color: var(--azul);
+}
+.btn-secondary:focus-visible {
+  outline: 0px;
+}
+.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0rem var(--amareloc);
 }
 
 .btn-outline-primary {
@@ -263,6 +283,19 @@ body {
 }
 .btn-outline-primary.focus, .btn-outline-primary:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem var(--amareloc) !important;
+}
+
+.btn-click {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.btn-click:hover {
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-click:active {
+  transform: translateX(4px) translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card {

@@ -25,9 +25,34 @@
   content: "R$";
   font-size: 80%;
 }
+#cardapio .carrinho {
+  z-index: 99999;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+#cardapio .carrinho .btn {
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
+  font-size: 1.5rem;
+}
+#cardapio .carrinho .btn:hover {
+  font-size: 1.4rem;
+}
 
 #doe .card-text {
+  color: var(--amarelo);
   -webkit-user-select: all;
      -moz-user-select: all;
           user-select: all;
+  background: none;
+  border: none;
+  resize: none;
+  display: inline;
+  height: 30px;
+}
+#doe .copy-html.success::before {
+  content: "Pix copiado com sucesso!" !important;
+  padding: 0 10px;
 }/*# sourceMappingURL=style-pages.css.map */
