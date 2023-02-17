@@ -1,0 +1,55 @@
+@import url(styles.scss);
+
+$azul:var(--azul);
+  $amarelo:var(--amarelo);
+  $amareloc:var(--amareloc);
+  $branco:var(--branco);
+  $cinzac:var(--cinzac);
+  $cinzam:var(--cinzam);
+  $cinza:var(--cinza);
+  $preto:var(--preto);
+  $transparente:var(--transparente);
+
+
+  #cardapio{
+
+    .card{
+      height: 100%;
+    }
+    .card-text{
+      margin: 0;
+    }
+    .card-footer{
+      display: flex;
+      justify-content: space-between;
+
+      .quant{
+        line-height: 2rem;
+
+        &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+          background-color: transparent;
+          border-color: $azul;
+          color: $amarelo;
+          font-size: 100%;
+        }
+      }
+      .card-subtitle{
+        margin: 0;
+      }
+    }
+    .preco{
+
+      &::before{
+        content: "R$";
+        font-size: 80%;
+      }
+    }
+  }
+
+  #doe{
+
+    .card-text{
+      user-select: all;
+    }
+
+  }

@@ -1,0 +1,33 @@
+@import url(styles.scss);
+#cardapio .card {
+  height: 100%;
+}
+#cardapio .card-text {
+  margin: 0;
+}
+#cardapio .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+#cardapio .card-footer .quant {
+  line-height: 2rem;
+}
+#cardapio .card-footer .quant:not(:disabled):not(.disabled).active, #cardapio .card-footer .quant:not(:disabled):not(.disabled):active, .show > #cardapio .card-footer .quant.dropdown-toggle, #cardapio .card-footer .quant:hover {
+  background-color: transparent;
+  border-color: var(--azul);
+  color: var(--amarelo);
+  font-size: 100%;
+}
+#cardapio .card-footer .card-subtitle {
+  margin: 0;
+}
+#cardapio .preco::before {
+  content: "R$";
+  font-size: 80%;
+}
+
+#doe .card-text {
+  -webkit-user-select: all;
+     -moz-user-select: all;
+          user-select: all;
+}/*# sourceMappingURL=style-pages.css.map */

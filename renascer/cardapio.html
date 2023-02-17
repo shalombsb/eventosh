@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css" >
   <link rel="stylesheet" href="../fontes/stylesheet.css">
   <link rel="stylesheet" href="../sass/styles.css">
-  <link rel="stylesheet" href="../sass/style-home.css">
+  <link rel="stylesheet" href="../sass/style-pages.css">
   <link rel="stylesheet" href="https://kit.fontawesome.com/ca98b537e7.css" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/ca98b537e7.js" crossorigin="anonymous"></script>
 
@@ -20,20 +20,84 @@
     <title>Cardápio | Renascer</title>
 
 </head>
-<body class="b-branco">
+<body id="cardapio" class="b-branco">
     
-    <section id="menu" class="nav-section fixed-top b-amareloc" data-aos="fade-up"></section>
+    <section id="menu" class="nav-section" data-aos="fade-up"></section>
 
 
     <section id="content">
 
+      <section class="b-azul sticky-top sect">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col text-center">
+              <h1 class="c-branco fw-800">
+                Lanchonete
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container py-5">
+          <div class="row g-3 list-lanchonete">
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="b-azul sticky-top sect">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col text-center">
+              <h1 class="c-branco fw-800">
+                Bebidas
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container py-5">
+          <div class="row g-3 list-bebidas">
+            
+  
+          </div>
+        </div>
+      </section>
+
+      <section class="b-azul sticky-top sect">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col text-center">
+              <h1 class="c-branco fw-800">
+                Almoço
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container py-5">
+          <div class="row g-3 list-almoco" >
+            
+          </div>
+        </div>
+      </section>
+
     </section>
 
 
-    <footer class="w-100 text-end"></footer>
+    <footer id="footer" class="w-100 text-end"></footer>
 
   <script src="../script/jquery.3.5.1.js"></script>
   <script src="../script/bootstrap.bundle.min.js"></script>
+  <script src="../script/lanchonete.js"></script>
+  <script src="../script/bebidas.js"></script>
+  <script src="../script/almoco.js"></script>
 
   <script>
     $("#menu").load("menu.html");
