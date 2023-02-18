@@ -16,26 +16,19 @@ $azul:var(--azul);
     .card{
       height: 100%;
     }
-    .card-text{
-      margin: 0;
-    }
-    .card-footer{
+    .card-body, .card-footer{
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      text-align: start;
+    }
+    .card-title, .card-subtitle{
+      margin: 0;
 
-      .quant{
-        line-height: 2.25rem;
-
-        &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-          background-color: transparent;
-          border-color: $azul;
-          color: $amarelo;
-          font-size: 100%;
-        }
-      }
-      .card-subtitle{
-        margin: 0;
-      }
+    }
+    .card-text{
+      margin-bottom: 0;
+      margin-right: 10px;
     }
     .preco{
 
@@ -44,6 +37,18 @@ $azul:var(--azul);
         font-size: 80%;
       }
     }
+
+    .quant{
+      line-height: 2.25rem;
+
+      &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+        background-color: transparent;
+        border-color: $azul;
+        color: $amarelo;
+        font-size: 100%;
+      }
+    }
+    
 
     .carrinho{
       z-index: 99999;

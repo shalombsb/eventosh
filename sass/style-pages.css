@@ -2,28 +2,31 @@
 #cardapio .card {
   height: 100%;
 }
-#cardapio .card-text {
-  margin: 0;
-}
-#cardapio .card-footer {
+#cardapio .card-body, #cardapio .card-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: start;
 }
-#cardapio .card-footer .quant {
-  line-height: 2.25rem;
-}
-#cardapio .card-footer .quant:not(:disabled):not(.disabled).active, #cardapio .card-footer .quant:not(:disabled):not(.disabled):active, .show > #cardapio .card-footer .quant.dropdown-toggle, #cardapio .card-footer .quant:hover {
-  background-color: transparent;
-  border-color: var(--azul);
-  color: var(--amarelo);
-  font-size: 100%;
-}
-#cardapio .card-footer .card-subtitle {
+#cardapio .card-title, #cardapio .card-subtitle {
   margin: 0;
+}
+#cardapio .card-text {
+  margin-bottom: 0;
+  margin-right: 10px;
 }
 #cardapio .preco::before {
   content: "R$";
   font-size: 80%;
+}
+#cardapio .quant {
+  line-height: 2.25rem;
+}
+#cardapio .quant:not(:disabled):not(.disabled).active, #cardapio .quant:not(:disabled):not(.disabled):active, .show > #cardapio .quant.dropdown-toggle, #cardapio .quant:hover {
+  background-color: transparent;
+  border-color: var(--azul);
+  color: var(--amarelo);
+  font-size: 100%;
 }
 #cardapio .carrinho {
   z-index: 99999;

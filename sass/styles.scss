@@ -281,15 +281,15 @@
   }
   .btn-secondary{
     font-size: var(--font-geral);
-    border-color: $amarelo;
-    background-color: $amarelo;
+    border-color: $amareloc;
+    background-color: $amareloc;
     color: $branco;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
       border-color: $amarelo;
       background-color: $amarelo;
-      color: $azul;
+      color: $branco;
     }
 
     &:focus-visible{
@@ -358,6 +358,7 @@
   #menu{
     .nav-link{
       color: $azul!important;
+      text-align: end;
   
       &:hover{
         filter: brightness(0.8);
