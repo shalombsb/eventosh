@@ -38,9 +38,49 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
+  border-radius: 35px;
+  display: flex;
+  align-items: end;
+  background-color: var(--amareloc);
+}
+#cardapio .carrinho .carrinho-infos {
+  padding: 0rem;
+  opacity: 0;
+  height: 50px;
+  width: 0px;
+  transition: 0.3s all ease-in-out;
+}
+#cardapio .carrinho .carrinho-infos .total, #cardapio .carrinho .carrinho-infos .preco {
+  transform: scale(0, 0);
+}
+#cardapio .carrinho .carrinho-infos .total {
+  border-bottom: 2px solid;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cardapio .carrinho .carrinho-infos .total .atualizar {
+  font-size: 1.4rem;
+  transition: 0.3s all ease-in-out;
+}
+#cardapio .carrinho .carrinho-infos .total .atualizar:hover {
+  transform: rotate(30deg);
+}
+#cardapio .carrinho .carrinho-infos .total .atualizar:active {
+  transform: rotate(360deg);
+}
+#cardapio .carrinho .carrinho-infos.show {
+  padding: 1.5rem;
+  opacity: 1;
+  height: auto;
+  width: auto;
+}
+#cardapio .carrinho .carrinho-infos.show .total, #cardapio .carrinho .carrinho-infos.show .preco {
+  transform: scale(1, 1);
 }
 #cardapio .carrinho .btn {
-  border-radius: 100px;
+  border-radius: 35px;
   height: 70px;
   width: 70px;
   font-size: 1.5rem;
