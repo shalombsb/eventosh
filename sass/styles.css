@@ -304,10 +304,6 @@ body {
 .card:hover {
   border: 1px solid var(--azul);
 }
-.card .icon-card {
-  font-size: 3rem;
-  margin-right: 1rem;
-}
 .card .card-footer {
   text-align: end;
 }

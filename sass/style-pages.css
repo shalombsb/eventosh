@@ -1,4 +1,9 @@
 @import url(styles.scss);
+#home .fa-solid {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
 #cardapio .card {
   height: 100%;
 }

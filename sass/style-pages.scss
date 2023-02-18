@@ -10,7 +10,12 @@ $azul:var(--azul);
   $preto:var(--preto);
   $transparente:var(--transparente);
 
-
+  #home{
+    .fa-solid{
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+  }
   #cardapio{
 
     .card{
