@@ -4,6 +4,9 @@
   margin-right: 1rem;
 }
 
+#cardapio .height-184 {
+  height: 184px;
+}
 #cardapio .card {
   height: 100%;
 }
