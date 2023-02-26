@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(../fontes/stylesheet.css);
 :root {
+  --azul-e:#077683;
   --azul:#32a0ad;
   --amarelo:#f29f05;
   --amareloc:#fac054;
@@ -263,6 +264,10 @@ body {
 .btn-secondary:focus-visible {
   outline: 0px;
 }
+.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0rem var(--amareloc);
+}
+
 .btn-outline-primary {
   font-size: var(--font-geral);
   border-color: var(--azul);
@@ -277,6 +282,9 @@ body {
 }
 .btn-outline-primary:focus-visible {
   border: 1px solid var(--amarelo);
+}
+.btn-outline-primary.focus, .btn-outline-primary:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0rem var(--amareloc);
 }
 .btn-outline-primary.active:focus {
   border: 1px solid var(--amarelo);

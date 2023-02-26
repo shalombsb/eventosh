@@ -12,6 +12,7 @@
   $transparente:var(--transparente);
 
   :root{
+    --azul-e:#077683;
     --azul:#32a0ad;
     --amarelo:#f29f05;
     --amareloc:#fac054;
@@ -25,7 +26,7 @@
 
   }
 
-
+  
   /* 
   --------------------------------
   GERAIS
@@ -297,7 +298,7 @@
     }
 
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      
+      box-shadow: 0 0 0 0rem $amareloc;
     }
   }
   .btn-outline-primary{
@@ -318,7 +319,7 @@
     }
     
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      
+      box-shadow: 0 0 0 0rem $amareloc;
     }
     &.active:focus{
       border: 1px solid $amarelo;

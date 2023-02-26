@@ -143,3 +143,25 @@ $azul:var(--azul);
     }
 
   }
+
+  #dados{
+
+    .height-144{
+      height: 144px;
+      z-index: -1;
+      position: relative;
+    }
+
+    .titulo-dia{
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $branco;
+      font-weight: 800;
+    }
+    .card{
+      overflow-x: scroll;
+    }
+    .chegada{
+      max-width: 629px!important;
+      margin: auto;
+    }
+  }

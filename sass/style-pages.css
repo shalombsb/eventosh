@@ -106,4 +106,22 @@
 #doe .copy-html.success::before {
   content: "Pix copiado com sucesso!" !important;
   padding: 0 10px;
+}
+
+#dados .height-144 {
+  height: 144px;
+  z-index: -1;
+  position: relative;
+}
+#dados .titulo-dia {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--branco);
+  font-weight: 800;
+}
+#dados .card {
+  overflow-x: scroll;
+}
+#dados .chegada {
+  max-width: 629px !important;
+  margin: auto;
 }/*# sourceMappingURL=style-pages.css.map */
