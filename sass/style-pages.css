@@ -133,7 +133,6 @@
   margin: 0 5px;
 }
 #dados #navbar-dados .nav-item .nav-link:hover {
-  color: var(--azul) !important;
   border: 1px solid var(--azul);
   filter: none;
 }
