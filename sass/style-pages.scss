@@ -145,23 +145,101 @@ $azul:var(--azul);
   }
 
   #dados{
+    #navbar-dados{
+      .nav-item{
+        text-align: end;
+        .nav-link{
+          display: inline-flex;
+          padding: .375rem .75rem;
 
+          border:1px solid $branco;
+          color: $branco!important;
+          transition: .3s all ease-in-out;
+          margin: 0 5px;
+
+          &:hover{
+            color: $azul!important;
+            border:1px solid $azul;
+            filter:none;
+          }
+          &.active{
+            background: $amarelo;
+            border:1px solid $amarelo;
+            color: $branco;
+          }
+        }
+      }
+    }
+    .height-106{
+      height: 106px;
+    }
     .height-144{
       height: 144px;
       z-index: -1;
       position: relative;
     }
 
+    #chegada{
+      position: relative;
+      height: 100%;
+      overflow:visible;
+    }
     .titulo-dia{
       padding-bottom: 1rem;
       border-bottom: 2px solid $branco;
       font-weight: 800;
     }
+    .descricao{
+      color: $branco;
+      margin: 0;
+    }
+    .btn-outline-secondary{
+      border:1px solid $azul;
+      color: $azul;
+      transition: .3s all ease-in-out;
+      margin: 0 5px;
+
+      &:hover{
+        color: $branco;
+      }
+      &.active{
+        background: $azul;
+        color: $branco;
+      }
+    }
     .card{
       overflow-x: scroll;
-    }
-    .chegada{
-      max-width: 629px!important;
-      margin: auto;
+
+      .nav-item{
+        width: 50%;
+
+        .nav-link{
+          width: 100%;
+          color: $azul;
+          font-weight: bold;
+          background-color: $branco;
+          border-radius: 0;
+          border-bottom: 2px solid $transparente;
+          transition: .3s all ease-in-out;
+
+
+          &.active{
+            color: $amarelo;
+            background-color: $transparente;
+            border-bottom: 2px solid $amarelo!important;
+          }
+          &:hover{
+            border-bottom: 2px solid $azul;
+          }
+        }
+      }
+      &.chegada{
+        max-width: 629px!important;
+        margin: auto;
+      }
+      &.credenciamento{
+        max-width: 629px!important;
+        margin: auto;
+      }
     }
   }

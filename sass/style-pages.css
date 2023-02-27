@@ -108,20 +108,90 @@
   padding: 0 10px;
 }
 
+#dados #navbar-dados .nav-item {
+  text-align: end;
+}
+#dados #navbar-dados .nav-item .nav-link {
+  display: inline-flex;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--branco);
+  color: var(--branco) !important;
+  transition: 0.3s all ease-in-out;
+  margin: 0 5px;
+}
+#dados #navbar-dados .nav-item .nav-link:hover {
+  color: var(--azul) !important;
+  border: 1px solid var(--azul);
+  filter: none;
+}
+#dados #navbar-dados .nav-item .nav-link.active {
+  background: var(--amarelo);
+  border: 1px solid var(--amarelo);
+  color: var(--branco);
+}
+#dados .height-106 {
+  height: 106px;
+}
 #dados .height-144 {
   height: 144px;
   z-index: -1;
   position: relative;
+}
+#dados #chegada {
+  position: relative;
+  height: 100%;
+  overflow: visible;
 }
 #dados .titulo-dia {
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--branco);
   font-weight: 800;
 }
+#dados .descricao {
+  color: var(--branco);
+  margin: 0;
+}
+#dados .btn-outline-secondary {
+  border: 1px solid var(--azul);
+  color: var(--azul);
+  transition: 0.3s all ease-in-out;
+  margin: 0 5px;
+}
+#dados .btn-outline-secondary:hover {
+  color: var(--branco);
+}
+#dados .btn-outline-secondary.active {
+  background: var(--azul);
+  color: var(--branco);
+}
 #dados .card {
   overflow-x: scroll;
 }
-#dados .chegada {
+#dados .card .nav-item {
+  width: 50%;
+}
+#dados .card .nav-item .nav-link {
+  width: 100%;
+  color: var(--azul);
+  font-weight: bold;
+  background-color: var(--branco);
+  border-radius: 0;
+  border-bottom: 2px solid var(--transparente);
+  transition: 0.3s all ease-in-out;
+}
+#dados .card .nav-item .nav-link.active {
+  color: var(--amarelo);
+  background-color: var(--transparente);
+  border-bottom: 2px solid var(--amarelo) !important;
+}
+#dados .card .nav-item .nav-link:hover {
+  border-bottom: 2px solid var(--azul);
+}
+#dados .card.chegada {
+  max-width: 629px !important;
+  margin: auto;
+}
+#dados .card.credenciamento {
   max-width: 629px !important;
   margin: auto;
 }/*# sourceMappingURL=style-pages.css.map */
