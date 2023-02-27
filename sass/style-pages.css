@@ -186,6 +186,7 @@
   width: 50%;
 }
 #dados .card .nav-item .nav-link {
+  background-color: var(--transparente);
   width: 100%;
   color: var(--azul);
   font-weight: bold;
