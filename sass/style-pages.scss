@@ -146,6 +146,17 @@ $azul:var(--azul);
 
   #dados{
     #navbar-dados{
+      .navbar-brand{
+        img{
+          height: 80px;
+          @media (max-width:992px) {
+            height: 42px;
+          }
+        }
+        @media (max-width:992px) {
+          margin: auto;
+        }
+      }
       .nav-item{
         text-align: end;
         .nav-link{
@@ -178,7 +189,11 @@ $azul:var(--azul);
       z-index: -1;
       position: relative;
     }
-
+    .nav-link{
+      @media (max-width:370px) {
+        padding: 0.35rem 0.5rem;
+      }
+    }
     .titulo-dia{
       padding-bottom: 1rem;
       border-bottom: 2px solid $branco;
@@ -202,9 +217,13 @@ $azul:var(--azul);
         color: $branco;
       }
     }
-    .card{
+    .scroll{
       overflow-x: scroll;
-
+    }
+    .card{
+      .tab-pane{
+        overflow-x: scroll;
+      }
       .nav-item{
         width: 50%;
 
@@ -229,23 +248,23 @@ $azul:var(--azul);
         }
       }
       &.chegada{
-        max-width: 629px!important;
+        max-width: 605px!important;
         margin: auto;
       }
       &.credenciamento{
-        max-width: 629px!important;
+        max-width: 605px!important;
         margin: auto;
       }
       &.idades{
-        max-width: 629px!important;
+        max-width: 605px!important;
         margin: auto;
       }
       &.origem{
-        max-width: 629px!important;
+        max-width: 605px!important;
         margin: auto;
       }
       &.regiao{
-        max-width: 629px!important;
+        max-width: 605px!important;
         margin: auto;
       }
       
