@@ -137,11 +137,6 @@
   z-index: -1;
   position: relative;
 }
-#dados #chegada {
-  position: relative;
-  height: 100%;
-  overflow: visible;
-}
 #dados .titulo-dia {
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--branco);
@@ -192,6 +187,18 @@
   margin: auto;
 }
 #dados .card.credenciamento {
+  max-width: 629px !important;
+  margin: auto;
+}
+#dados .card.idades {
+  max-width: 629px !important;
+  margin: auto;
+}
+#dados .card.origem {
+  max-width: 629px !important;
+  margin: auto;
+}
+#dados .card.regiao {
   max-width: 629px !important;
   margin: auto;
 }/*# sourceMappingURL=style-pages.css.map */

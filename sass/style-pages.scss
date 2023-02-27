@@ -179,11 +179,6 @@ $azul:var(--azul);
       position: relative;
     }
 
-    #chegada{
-      position: relative;
-      height: 100%;
-      overflow:visible;
-    }
     .titulo-dia{
       padding-bottom: 1rem;
       border-bottom: 2px solid $branco;
@@ -241,5 +236,18 @@ $azul:var(--azul);
         max-width: 629px!important;
         margin: auto;
       }
+      &.idades{
+        max-width: 629px!important;
+        margin: auto;
+      }
+      &.origem{
+        max-width: 629px!important;
+        margin: auto;
+      }
+      &.regiao{
+        max-width: 629px!important;
+        margin: auto;
+      }
+      
     }
   }
