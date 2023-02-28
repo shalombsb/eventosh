@@ -183,10 +183,12 @@ $azul:var(--azul);
     .height-106{
       height: 106px;
     }
-    .height-144{
-      height: 144px;
+    .titulo-dados{
       z-index: -1;
       position: relative;
+    }
+    .py-2rem{
+      padding: 2rem 0;
     }
     .nav-link{
       @media (max-width:370px) {
@@ -220,8 +222,11 @@ $azul:var(--azul);
       overflow-x: scroll;
     }
     .card{
+        max-width: 605px!important;
+        margin: auto;
       .tab-pane{
         overflow-x: scroll;
+        text-align: center;
       }
       .nav-item{
         width: 50%;
@@ -231,7 +236,6 @@ $azul:var(--azul);
           width: 100%;
           color: $azul;
           font-weight: bold;
-          background-color: $branco;
           border-radius: 0;
           border-bottom: 2px solid $transparente;
           transition: .3s all ease-in-out;
@@ -247,26 +251,7 @@ $azul:var(--azul);
           }
         }
       }
-      &.chegada{
-        max-width: 605px!important;
-        margin: auto;
-      }
-      &.credenciamento{
-        max-width: 605px!important;
-        margin: auto;
-      }
-      &.idades{
-        max-width: 605px!important;
-        margin: auto;
-      }
-      &.origem{
-        max-width: 605px!important;
-        margin: auto;
-      }
-      &.regiao{
-        max-width: 605px!important;
-        margin: auto;
-      }
+     
       
     }
   }

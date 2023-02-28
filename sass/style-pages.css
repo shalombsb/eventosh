@@ -144,10 +144,12 @@
 #dados .height-106 {
   height: 106px;
 }
-#dados .height-144 {
-  height: 144px;
+#dados .titulo-dados {
   z-index: -1;
   position: relative;
+}
+#dados .py-2rem {
+  padding: 2rem 0;
 }
 @media (max-width: 370px) {
   #dados .nav-link {
@@ -179,8 +181,13 @@
 #dados .scroll {
   overflow-x: scroll;
 }
+#dados .card {
+  max-width: 605px !important;
+  margin: auto;
+}
 #dados .card .tab-pane {
   overflow-x: scroll;
+  text-align: center;
 }
 #dados .card .nav-item {
   width: 50%;
@@ -190,7 +197,6 @@
   width: 100%;
   color: var(--azul);
   font-weight: bold;
-  background-color: var(--branco);
   border-radius: 0;
   border-bottom: 2px solid var(--transparente);
   transition: 0.3s all ease-in-out;
@@ -202,24 +208,4 @@
 }
 #dados .card .nav-item .nav-link:hover {
   border-bottom: 2px solid var(--azul);
-}
-#dados .card.chegada {
-  max-width: 605px !important;
-  margin: auto;
-}
-#dados .card.credenciamento {
-  max-width: 605px !important;
-  margin: auto;
-}
-#dados .card.idades {
-  max-width: 605px !important;
-  margin: auto;
-}
-#dados .card.origem {
-  max-width: 605px !important;
-  margin: auto;
-}
-#dados .card.regiao {
-  max-width: 605px !important;
-  margin: auto;
 }/*# sourceMappingURL=style-pages.css.map */
