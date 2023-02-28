@@ -1,6 +1,7 @@
 @import url(../fontes/stylesheet.css);
 
   $azul:var(--azul);
+  $azule:var(--azule);
   $amarelo:var(--amarelo);
   $amareloc:var(--amareloc);
   $branco:var(--branco);
@@ -12,7 +13,7 @@
   $transparente:var(--transparente);
 
   :root{
-    --azul-e:#077683;
+    --azule:#077683;
     --azul:#32a0ad;
     --amarelo:#f29f05;
     --amareloc:#fac054;
@@ -77,6 +78,9 @@
     &azul{
       color:$azul!important;
     }
+    &azule{
+      color:$azule!important;
+    }
     &amarelo{
       color:$amarelo!important;
     }
@@ -106,6 +110,9 @@
     &azul{
       background-color:$azul!important;
     }
+    &azule{
+      background-color:$azule!important;
+    }
     &amarelo{
       background-color:$amarelo!important;
     }
@@ -134,6 +141,9 @@
   .border-{
     &azul{
       border-color:$azul!important;
+    }
+    &azule{
+      border-color:$azule!important;
     }
     &amarelo{
       border-color:$amarelo!important;

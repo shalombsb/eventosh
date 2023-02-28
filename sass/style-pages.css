@@ -208,4 +208,43 @@
 }
 #dados .card .nav-item .nav-link:hover {
   border-bottom: 2px solid var(--azul);
+}
+#dados .dados h1, #dados .dados h2, #dados .dados h3, #dados .dados h4, #dados .dados h5, #dados .dados h6 {
+  margin: 0;
+}
+#dados .dados .icon {
+  width: 68px;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+}
+#dados .dados .icon .fa-solid {
+  font-size: 4.25rem;
+  color: var(--amarelo);
+}
+#dados .dados .pequeno {
+  font-size: 90%;
+}
+#dados .dados .pequeno i {
+  font-size: 70%;
+  margin-right: 0.25rem;
+}
+#dados .dados h5 {
+  color: var(--azule);
+  border-bottom: 2px solid var(--azule);
+  padding-left: 32.35px;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+#dados .dados .small, #dados .dados small {
+  font-size: 0.75em;
+}
+#dados .dados p.amareloc i {
+  color: var(--amarelo) !important;
+}
+#dados .dados li span, #dados .dados .small span {
+  color: var(--azule);
+}
+#dados .dados li::marker {
+  color: var(--amarelo);
 }/*# sourceMappingURL=style-pages.css.map */

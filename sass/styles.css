@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(../fontes/stylesheet.css);
 :root {
-  --azul-e:#077683;
+  --azule:#077683;
   --azul:#32a0ad;
   --amarelo:#f29f05;
   --amareloc:#fac054;
@@ -60,6 +60,9 @@ body {
 .c-azul {
   color: var(--azul) !important;
 }
+.c-azule {
+  color: var(--azule) !important;
+}
 .c-amarelo {
   color: var(--amarelo) !important;
 }
@@ -85,6 +88,9 @@ body {
 /* COR DOS FUNDOS */
 .b-azul {
   background-color: var(--azul) !important;
+}
+.b-azule {
+  background-color: var(--azule) !important;
 }
 .b-amarelo {
   background-color: var(--amarelo) !important;
@@ -112,6 +118,9 @@ body {
 /* PESO DA BORDA */
 .border-azul {
   border-color: var(--azul) !important;
+}
+.border-azule {
+  border-color: var(--azule) !important;
 }
 .border-amarelo {
   border-color: var(--amarelo) !important;

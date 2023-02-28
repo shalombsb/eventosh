@@ -1,6 +1,7 @@
 @import url(styles.scss);
 
-$azul:var(--azul);
+  $azul:var(--azul);
+  $azule:var(--azule);
   $amarelo:var(--amarelo);
   $amareloc:var(--amareloc);
   $branco:var(--branco);
@@ -253,5 +254,56 @@ $azul:var(--azul);
       }
      
       
+    }
+
+    .dados{
+      h1,h2,h3,h4,h5,h6{
+        margin: 0;
+      }
+      .icon{
+        width: 68px;
+        margin-right: 1rem;
+        display: flex;
+        justify-content: center;
+        .fa-solid{
+          font-size: 4.25rem;
+          
+          color: $amarelo;
+        }
+      }
+
+      .pequeno{
+        font-size: 90%;
+
+        i{
+          font-size: 70%;
+          margin-right: 0.25rem;
+        }
+      }
+
+      h5{
+        color: $azule;
+        border-bottom: 2px solid $azule;
+        padding-left: 32.35px;
+        padding-bottom: .25rem;
+        margin-bottom: .5rem;
+      }
+      .small, small {
+        font-size: .75em;
+      }
+      p.amareloc{
+        i{
+          color: $amarelo!important;
+        }
+      }
+      li, .small{
+        span{
+          color: $azule;
+        }
+      }
+      
+      li::marker{
+        color: $amarelo;
+      }
     }
   }
