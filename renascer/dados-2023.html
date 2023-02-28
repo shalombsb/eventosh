@@ -24,7 +24,16 @@
 
     <title>Dados 2023 | Renascer</title>
 
+<script>
+  document.addEventListener('readystatechange', event => {
+  switch (document.readyState) {
+    case "complete":
+      $('.preloader').fadeOut(500)
+      break;
+  }
+});
 
+</script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2S6TM4YRH"></script>
 <script>
@@ -905,9 +914,6 @@
   
   <script>
     $("#footer").load("footer.html");
-  </script>
-  <script>
-    window.onload($('.preloader').fadeOut(500));
   </script>
  
 </body>
