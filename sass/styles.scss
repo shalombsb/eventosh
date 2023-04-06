@@ -1,9 +1,9 @@
 @import url(../fontes/stylesheet.css);
 
-  $azul:var(--azul);
-  $azule:var(--azule);
-  $amarelo:var(--amarelo);
-  $amareloc:var(--amareloc);
+  $laranja:var(--laranja);
+  $laranjae:var(--laranjae);
+  $marrom:var(--marrom);
+  $vermelho:var(--vermelho);
   $branco:var(--branco);
   $cinzac:var(--cinzac);
   $cinzam:var(--cinzam);
@@ -12,12 +12,12 @@
   $sombra:var(--sombra);
   $transparente:var(--transparente);
 
-  :root{
-    --azule:#077683;
-    --azul:#32a0ad;
-    --amarelo:#f29f05;
-    --amareloc:#fac054;
-    --branco:#fff;
+  :root{    
+    --laranja:#b27700;
+    --laranjae:#a23e00;
+    --marrom:#784000;
+    --vermelho:#52001f;
+    --branco:#ebeae8;
     --cinzac:#F9F9F9;
     --cinzam:#D1D1D1;
     --cinza:#5E5E5E;
@@ -62,30 +62,34 @@
 
   body {
     width: 100vw;
-    font-family: 'Made Tommy', sans-serif; 
+    font-family: 'Helvetica', sans-serif; 
     overflow-x: hidden;
-    color: $azul!important;
+    color: $laranja!important;
   }
 
-  .avant{
-    font-family: 'Avant Garde', sans-serif; 
+  .vanroot{
+    font-family: 'Vanroot', sans-serif; 
+  }
+
+  .aubrey{
+    font-family: 'Aubrey', sans-serif; 
   }
 
   
   /* COR DAS FONTES */
   .c-{
 
-    &azul{
-      color:$azul!important;
+    &laranja{
+      color:$laranja!important;
     }
-    &azule{
-      color:$azule!important;
+    &laranjae{
+      color:$laranjae!important;
     }
-    &amarelo{
-      color:$amarelo!important;
+    &marrom{
+      color:$marrom!important;
     }
-    &amareloc{
-      color:$amareloc!important;
+    &vermelho{
+      color:$vermelho!important;
     }
     &branco{
       color:$branco!important;
@@ -107,17 +111,17 @@
   /* COR DOS FUNDOS */
   .b-{
 
-    &azul{
-      background-color:$azul!important;
+    &laranja{
+      background-color:$laranja!important;
     }
-    &azule{
-      background-color:$azule!important;
+    &laranjae{
+      background-color:$laranjae!important;
     }
-    &amarelo{
-      background-color:$amarelo!important;
+    &marrom{
+      background-color:$marrom!important;
     }
-    &amareloc{
-      background-color:$amareloc!important;
+    &vermelho{
+      background-color:$vermelho!important;
     }
     &branco{
       background-color:$branco!important;
@@ -139,17 +143,17 @@
   /* COR DA BORDA */
   /* PESO DA BORDA */
   .border-{
-    &azul{
-      border-color:$azul!important;
+    &laranja{
+      border-color:$laranja!important;
     }
-    &azule{
-      border-color:$azule!important;
+    &laranjae{
+      border-color:$laranjae!important;
     }
-    &amarelo{
-      border-color:$amarelo!important;
+    &marrom{
+      border-color:$marrom!important;
     }
-    &amareloc{
-      border-color:$amareloc!important;
+    &vermelho{
+      border-color:$vermelho!important;
     }
     &branco{
       border-color:$branco!important;
@@ -272,34 +276,34 @@
   /* BOTÕES */
   .btn-primary{
     font-size: var(--font-geral);
-    border-color: $azul;
-    background-color: $azul;
+    border-color: $laranja;
+    background-color: $laranja;
     color: $branco;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      border-color: $amarelo;
-      background-color: $amarelo;
+      border-color: $marrom;
+      background-color: $marrom;
     }
 
     &:focus-visible{
-      outline: $amareloc auto 1px;
+      outline: $vermelho auto 1px;
     }
 
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $amareloc;
+      box-shadow: 0 0 0 0rem $vermelho;
     }
   }
   .btn-secondary{
     font-size: var(--font-geral);
-    border-color: $amareloc;
-    background-color: $amareloc;
+    border-color: $vermelho;
+    background-color: $vermelho;
     color: $branco;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      border-color: $amarelo;
-      background-color: $amarelo;
+      border-color: $marrom;
+      background-color: $marrom;
       color: $branco;
     }
 
@@ -308,31 +312,31 @@
     }
 
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $amareloc;
+      box-shadow: 0 0 0 0rem $vermelho;
     }
   }
   .btn-outline-primary{
     font-size: var(--font-geral);
-    border-color: $azul;
-    color: $amarelo;
+    border-color: $laranja;
+    color: $marrom;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      background-color: $azul;
-      border-color: $azul;
+      background-color: $laranja;
+      border-color: $laranja;
       color: $branco;
       font-size: calc(var(--font-geral) + .1rem);
     }
 
     &:focus-visible{
-      border: 1px solid $amarelo;
+      border: 1px solid $marrom;
     }
     
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $amareloc;
+      box-shadow: 0 0 0 0rem $vermelho;
     }
     &.active:focus{
-      border: 1px solid $amarelo;
+      border: 1px solid $marrom;
     }
   }
 
@@ -352,22 +356,30 @@
 
   }
 
-
+  .burn{
+    mix-blend-mode: color-burn;
+  }
 
   .card{
     box-shadow: 0 16px 16px $sombra, 0 8px 8px $sombra, 0 4px 4px $sombra, 0 0 10px $sombra;
 
     &:hover{
-      border: 1px solid $azul;
+      border: 1px solid $laranja;
     }
     .card-footer{
       text-align: end;
     }
   }
 
+  .bg{
+    background-image: url(../images/BG.jpg);
+  }
   #menu{
+    .navbar-brand img{
+      mix-blend-mode: color-burn;
+    }
     .nav-link{
-      color: $azul!important;
+      color: $laranja!important;
       text-align: end;
   
       &:hover{
@@ -460,7 +472,7 @@
 }
 .spinner{
   --spinner-size: 5;
-  --line-color: #32a0ad;
+  --line-color: #52001f;
   --line-alpha: 1;
   --ring-color: transparent;
   --ring-alpha: 1;

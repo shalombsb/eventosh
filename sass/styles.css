@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @import url(../fontes/stylesheet.css);
 :root {
-  --azule:#077683;
-  --azul:#32a0ad;
-  --amarelo:#f29f05;
-  --amareloc:#fac054;
-  --branco:#fff;
+  --laranja:#b27700;
+  --laranjae:#a23e00;
+  --marrom:#784000;
+  --vermelho:#52001f;
+  --branco:#ebeae8;
   --cinzac:#F9F9F9;
   --cinzam:#D1D1D1;
   --cinza:#5E5E5E;
@@ -47,27 +47,31 @@ html {
 
 body {
   width: 100vw;
-  font-family: "Made Tommy", sans-serif;
+  font-family: "Helvetica", sans-serif;
   overflow-x: hidden;
-  color: var(--azul) !important;
+  color: var(--laranja) !important;
 }
 
-.avant {
-  font-family: "Avant Garde", sans-serif;
+.vanroot {
+  font-family: "Vanroot", sans-serif;
+}
+
+.aubrey {
+  font-family: "Aubrey", sans-serif;
 }
 
 /* COR DAS FONTES */
-.c-azul {
-  color: var(--azul) !important;
+.c-laranja {
+  color: var(--laranja) !important;
 }
-.c-azule {
-  color: var(--azule) !important;
+.c-laranjae {
+  color: var(--laranjae) !important;
 }
-.c-amarelo {
-  color: var(--amarelo) !important;
+.c-marrom {
+  color: var(--marrom) !important;
 }
-.c-amareloc {
-  color: var(--amareloc) !important;
+.c-vermelho {
+  color: var(--vermelho) !important;
 }
 .c-branco {
   color: var(--branco) !important;
@@ -86,17 +90,17 @@ body {
 }
 
 /* COR DOS FUNDOS */
-.b-azul {
-  background-color: var(--azul) !important;
+.b-laranja {
+  background-color: var(--laranja) !important;
 }
-.b-azule {
-  background-color: var(--azule) !important;
+.b-laranjae {
+  background-color: var(--laranjae) !important;
 }
-.b-amarelo {
-  background-color: var(--amarelo) !important;
+.b-marrom {
+  background-color: var(--marrom) !important;
 }
-.b-amareloc {
-  background-color: var(--amareloc) !important;
+.b-vermelho {
+  background-color: var(--vermelho) !important;
 }
 .b-branco {
   background-color: var(--branco) !important;
@@ -116,17 +120,17 @@ body {
 
 /* COR DA BORDA */
 /* PESO DA BORDA */
-.border-azul {
-  border-color: var(--azul) !important;
+.border-laranja {
+  border-color: var(--laranja) !important;
 }
-.border-azule {
-  border-color: var(--azule) !important;
+.border-laranjae {
+  border-color: var(--laranjae) !important;
 }
-.border-amarelo {
-  border-color: var(--amarelo) !important;
+.border-marrom {
+  border-color: var(--marrom) !important;
 }
-.border-amareloc {
-  border-color: var(--amareloc) !important;
+.border-vermelho {
+  border-color: var(--vermelho) !important;
 }
 .border-branco {
   border-color: var(--branco) !important;
@@ -242,61 +246,61 @@ body {
 /* BOTÕES */
 .btn-primary {
   font-size: var(--font-geral);
-  border-color: var(--azul);
-  background-color: var(--azul);
+  border-color: var(--laranja);
+  background-color: var(--laranja);
   color: var(--branco);
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
-  border-color: var(--amarelo);
-  background-color: var(--amarelo);
+  border-color: var(--marrom);
+  background-color: var(--marrom);
 }
 .btn-primary:focus-visible {
-  outline: var(--amareloc) auto 1px;
+  outline: var(--vermelho) auto 1px;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0rem var(--amareloc);
+  box-shadow: 0 0 0 0rem var(--vermelho);
 }
 
 .btn-secondary {
   font-size: var(--font-geral);
-  border-color: var(--amareloc);
-  background-color: var(--amareloc);
+  border-color: var(--vermelho);
+  background-color: var(--vermelho);
   color: var(--branco);
   transition: 0.5s all ease-in-out;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
-  border-color: var(--amarelo);
-  background-color: var(--amarelo);
+  border-color: var(--marrom);
+  background-color: var(--marrom);
   color: var(--branco);
 }
 .btn-secondary:focus-visible {
   outline: 0px;
 }
 .btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0rem var(--amareloc);
+  box-shadow: 0 0 0 0rem var(--vermelho);
 }
 
 .btn-outline-primary {
   font-size: var(--font-geral);
-  border-color: var(--azul);
-  color: var(--amarelo);
+  border-color: var(--laranja);
+  color: var(--marrom);
   transition: 0.5s all ease-in-out;
 }
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle, .btn-outline-primary:hover {
-  background-color: var(--azul);
-  border-color: var(--azul);
+  background-color: var(--laranja);
+  border-color: var(--laranja);
   color: var(--branco);
   font-size: calc(var(--font-geral) + 0.1rem);
 }
 .btn-outline-primary:focus-visible {
-  border: 1px solid var(--amarelo);
+  border: 1px solid var(--marrom);
 }
 .btn-outline-primary.focus, .btn-outline-primary:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0rem var(--amareloc);
+  box-shadow: 0 0 0 0rem var(--vermelho);
 }
 .btn-outline-primary.active:focus {
-  border: 1px solid var(--amarelo);
+  border: 1px solid var(--marrom);
 }
 
 .btn-click {
@@ -312,18 +316,29 @@ body {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 
+.burn {
+  mix-blend-mode: color-burn;
+}
+
 .card {
   box-shadow: 0 16px 16px var(--sombra), 0 8px 8px var(--sombra), 0 4px 4px var(--sombra), 0 0 10px var(--sombra);
 }
 .card:hover {
-  border: 1px solid var(--azul);
+  border: 1px solid var(--laranja);
 }
 .card .card-footer {
   text-align: end;
 }
 
+.bg {
+  background-image: url(../images/BG.jpg);
+}
+
+#menu .navbar-brand img {
+  mix-blend-mode: color-burn;
+}
 #menu .nav-link {
-  color: var(--azul) !important;
+  color: var(--laranja) !important;
   text-align: end;
 }
 #menu .nav-link:hover {
@@ -406,7 +421,7 @@ footer .position-absolute {
 
 .spinner {
   --spinner-size: 5;
-  --line-color: #32a0ad;
+  --line-color: #52001f;
   --line-alpha: 1;
   --ring-color: transparent;
   --ring-alpha: 1;

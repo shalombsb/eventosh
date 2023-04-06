@@ -1,9 +1,9 @@
 @import url(styles.scss);
 
-  $azul:var(--azul);
-  $azule:var(--azule);
-  $amarelo:var(--amarelo);
-  $amareloc:var(--amareloc);
+  $laranja:var(--laranja);
+  $laranjae:var(--laranjae);
+  $marrom:var(--marrom);
+  $vermelho:var(--vermelho);
   $branco:var(--branco);
   $cinzac:var(--cinzac);
   $cinzam:var(--cinzam);
@@ -15,6 +15,11 @@
     .fa-solid{
       font-size: 3rem;
       margin-right: 1rem;
+      color: var(--vermelho);
+    }
+    .card-title{
+      font-weight: 700;
+      color: var(--vermelho);
     }
   }
   #cardapio{
@@ -33,7 +38,8 @@
     }
     .card-title, .card-subtitle{
       margin: 0;
-
+      color: var(--laranjae);
+      font-weight: 600;
     }
     .card-text{
       margin-bottom: 0;
@@ -48,17 +54,20 @@
     }
 
     .quant{
-      line-height: 2.25rem;
+      
 
       &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
         background-color: transparent;
-        border-color: $azul;
-        color: $amarelo;
+        border-color: $laranja;
+        color: $marrom;
         font-size: 100%;
       }
     }
     
-
+    .small, small {
+      font-size: .8em;
+  }
+    
     .carrinho{
       z-index: 99999;
       position: fixed;
@@ -67,7 +76,7 @@
       border-radius: 35px;
       display: flex;
       align-items: end;
-      background-color: $amareloc;
+      background-color: $vermelho;
 
       .carrinho-infos{
         padding: 0rem;
@@ -127,7 +136,7 @@
 
     .card-text{
 
-      color: $amarelo;
+      color: $marrom;
       user-select: all;
       background: none;
       border: none;
@@ -170,12 +179,12 @@
           margin: 0 5px;
 
           &:hover{
-            border:1px solid $azul;
+            border:1px solid $laranja;
             filter:none;
           }
           &.active{
-            background: $amarelo;
-            border:1px solid $amarelo;
+            background: $marrom;
+            border:1px solid $marrom;
             color: $branco;
           }
         }
@@ -206,8 +215,8 @@
       margin: 0;
     }
     .btn-outline-secondary{
-      border:1px solid $azul;
-      color: $azul;
+      border:1px solid $laranja;
+      color: $laranja;
       transition: .3s all ease-in-out;
       margin: 0 5px;
 
@@ -215,7 +224,7 @@
         color: $branco;
       }
       &.active{
-        background: $azul;
+        background: $laranja;
         color: $branco;
       }
     }
@@ -235,7 +244,7 @@
         .nav-link{
           background-color: $transparente;
           width: 100%;
-          color: $azul;
+          color: $laranja;
           font-weight: bold;
           border-radius: 0;
           border-bottom: 2px solid $transparente;
@@ -243,12 +252,12 @@
 
 
           &.active{
-            color: $amarelo;
+            color: $marrom;
             background-color: $transparente;
-            border-bottom: 2px solid $amarelo!important;
+            border-bottom: 2px solid $marrom!important;
           }
           &:hover{
-            border-bottom: 2px solid $azul;
+            border-bottom: 2px solid $laranja;
           }
         }
       }
@@ -268,7 +277,7 @@
         .fa-solid{
           font-size: 4.25rem;
           
-          color: $amarelo;
+          color: $marrom;
         }
       }
 
@@ -282,8 +291,8 @@
       }
 
       h5{
-        color: $azule;
-        border-bottom: 2px solid $azule;
+        color: $laranjae;
+        border-bottom: 2px solid $laranjae;
         padding-left: 32.35px;
         padding-bottom: .25rem;
         margin-bottom: .5rem;
@@ -291,19 +300,19 @@
       .small, small {
         font-size: .75em;
       }
-      p.amareloc{
+      p.vermelho{
         i{
-          color: $amarelo!important;
+          color: $marrom!important;
         }
       }
       li, .small{
         span{
-          color: $azule;
+          color: $laranjae;
         }
       }
       
       li::marker{
-        color: $amarelo;
+        color: $marrom;
       }
     }
   }
