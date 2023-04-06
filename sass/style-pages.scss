@@ -29,17 +29,29 @@
     }
     .card{
       height: 100%;
+      background: none;
+      border-color: var(--vermelho);
     }
     .card-body, .card-footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
       text-align: start;
+      padding: 0.5rem 1rem;
     }
     .card-title, .card-subtitle{
       margin: 0;
-      color: var(--laranjae);
       font-weight: 600;
+    }
+    .card-title{
+      color: var(--marrom);
+    }
+    .card-subtitle{
+      color: var(--laranjae);
+      mix-blend-mode: color-burn;
+    }
+    .card-footer{
+      border-color: var(--vermelho);
     }
     .card-text{
       margin-bottom: 0;
@@ -51,6 +63,10 @@
         content: "R$";
         font-size: 80%;
       }
+    }
+
+    .btn-outline-primary{
+      padding: 0.1rem 0.75rem;
     }
 
     .quant{

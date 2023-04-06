@@ -14,17 +14,29 @@
 }
 #cardapio .card {
   height: 100%;
+  background: none;
+  border-color: var(--vermelho);
 }
 #cardapio .card-body, #cardapio .card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: start;
+  padding: 0.5rem 1rem;
 }
 #cardapio .card-title, #cardapio .card-subtitle {
   margin: 0;
-  color: var(--laranjae);
   font-weight: 600;
+}
+#cardapio .card-title {
+  color: var(--marrom);
+}
+#cardapio .card-subtitle {
+  color: var(--laranjae);
+  mix-blend-mode: color-burn;
+}
+#cardapio .card-footer {
+  border-color: var(--vermelho);
 }
 #cardapio .card-text {
   margin-bottom: 0;
@@ -33,6 +45,9 @@
 #cardapio .preco::before {
   content: "R$";
   font-size: 80%;
+}
+#cardapio .btn-outline-primary {
+  padding: 0.1rem 0.75rem;
 }
 #cardapio .quant:not(:disabled):not(.disabled).active, #cardapio .quant:not(:disabled):not(.disabled):active, .show > #cardapio .quant.dropdown-toggle, #cardapio .quant:hover {
   background-color: transparent;

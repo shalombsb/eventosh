@@ -364,7 +364,7 @@
     box-shadow: 0 16px 16px $sombra, 0 8px 8px $sombra, 0 4px 4px $sombra, 0 0 10px $sombra;
 
     &:hover{
-      border: 1px solid $laranja;
+      border: 1px solid $laranja!important;
     }
     .card-footer{
       text-align: end;

@@ -324,7 +324,7 @@ body {
   box-shadow: 0 16px 16px var(--sombra), 0 8px 8px var(--sombra), 0 4px 4px var(--sombra), 0 0 10px var(--sombra);
 }
 .card:hover {
-  border: 1px solid var(--laranja);
+  border: 1px solid var(--laranja) !important;
 }
 .card .card-footer {
   text-align: end;
