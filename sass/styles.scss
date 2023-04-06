@@ -17,7 +17,7 @@
     --laranjae:#a23e00;
     --marrom:#784000;
     --vermelho:#52001f;
-    --branco:#ebeae8;
+    --branco:#d0ccc5;
     --cinzac:#F9F9F9;
     --cinzam:#D1D1D1;
     --cinza:#5E5E5E;
@@ -278,12 +278,14 @@
     font-size: var(--font-geral);
     border-color: $laranja;
     background-color: $laranja;
-    color: $branco;
+    color: $vermelho;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      border-color: $marrom;
-      background-color: $marrom;
+      border-color: $vermelho;
+      background-color: $branco;
+      background-image: url(../images/BG.jpg);
+      color: $vermelho;
     }
 
     &:focus-visible{

@@ -15,11 +15,21 @@
     .fa-solid{
       font-size: 3rem;
       margin-right: 1rem;
-      color: var(--vermelho);
+      color: var(--laranjae);
+      mix-blend-mode: color-burn;
     }
     .card-title{
       font-weight: 700;
       color: var(--vermelho);
+    }
+    .card{
+      height: 100%;
+      background: none;
+      border-color: var(--vermelho);
+    }
+    .card-footer{
+      border-color: var(--vermelho);
+      background-color: var(--vermelho);
     }
   }
   #cardapio{

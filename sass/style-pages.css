@@ -2,11 +2,21 @@
 #home .fa-solid {
   font-size: 3rem;
   margin-right: 1rem;
-  color: var(--vermelho);
+  color: var(--laranjae);
+  mix-blend-mode: color-burn;
 }
 #home .card-title {
   font-weight: 700;
   color: var(--vermelho);
+}
+#home .card {
+  height: 100%;
+  background: none;
+  border-color: var(--vermelho);
+}
+#home .card-footer {
+  border-color: var(--vermelho);
+  background-color: var(--vermelho);
 }
 
 #cardapio .height-184 {

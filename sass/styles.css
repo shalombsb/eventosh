@@ -5,7 +5,7 @@
   --laranjae:#a23e00;
   --marrom:#784000;
   --vermelho:#52001f;
-  --branco:#ebeae8;
+  --branco:#d0ccc5;
   --cinzac:#F9F9F9;
   --cinzam:#D1D1D1;
   --cinza:#5E5E5E;
@@ -248,12 +248,14 @@ body {
   font-size: var(--font-geral);
   border-color: var(--laranja);
   background-color: var(--laranja);
-  color: var(--branco);
+  color: var(--vermelho);
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
-  border-color: var(--marrom);
-  background-color: var(--marrom);
+  border-color: var(--vermelho);
+  background-color: var(--branco);
+  background-image: url(../images/BG.jpg);
+  color: var(--vermelho);
 }
 .btn-primary:focus-visible {
   outline: var(--vermelho) auto 1px;
