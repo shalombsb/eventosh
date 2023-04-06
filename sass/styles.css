@@ -2,6 +2,7 @@
 @import url(../fontes/stylesheet.css);
 :root {
   --laranja:#b27700;
+  --laranjam:#a06518;
   --laranjae:#a23e00;
   --marrom:#784000;
   --vermelho:#52001f;
@@ -64,6 +65,9 @@ body {
 .c-laranja {
   color: var(--laranja) !important;
 }
+.c-laranjam {
+  color: var(--laranjam) !important;
+}
 .c-laranjae {
   color: var(--laranjae) !important;
 }
@@ -92,6 +96,9 @@ body {
 /* COR DOS FUNDOS */
 .b-laranja {
   background-color: var(--laranja) !important;
+}
+.b-laranjam {
+  background-color: var(--laranjam) !important;
 }
 .b-laranjae {
   background-color: var(--laranjae) !important;
@@ -122,6 +129,9 @@ body {
 /* PESO DA BORDA */
 .border-laranja {
   border-color: var(--laranja) !important;
+}
+.border-laranjam {
+  border-color: var(--laranjam) !important;
 }
 .border-laranjae {
   border-color: var(--laranjae) !important;
@@ -246,15 +256,14 @@ body {
 /* BOTÕES */
 .btn-primary {
   font-size: var(--font-geral);
-  border-color: var(--laranja);
-  background-color: var(--laranja);
+  border-color: var(--vermelho);
+  background-color: var(--branco);
+  background-image: url(../images/BG.jpg);
   color: var(--vermelho);
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
   border-color: var(--vermelho);
-  background-color: var(--branco);
-  background-image: url(../images/BG.jpg);
   color: var(--vermelho);
 }
 .btn-primary:focus-visible {
@@ -268,13 +277,13 @@ body {
   font-size: var(--font-geral);
   border-color: var(--vermelho);
   background-color: var(--vermelho);
-  color: var(--branco);
+  color: var(--cinzac);
   transition: 0.5s all ease-in-out;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
   border-color: var(--marrom);
   background-color: var(--marrom);
-  color: var(--branco);
+  color: var(--cinzac);
 }
 .btn-secondary:focus-visible {
   outline: 0px;

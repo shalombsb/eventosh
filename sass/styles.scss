@@ -1,6 +1,7 @@
 @import url(../fontes/stylesheet.css);
 
   $laranja:var(--laranja);
+  $laranjam:var(--laranjam);
   $laranjae:var(--laranjae);
   $marrom:var(--marrom);
   $vermelho:var(--vermelho);
@@ -14,6 +15,7 @@
 
   :root{    
     --laranja:#b27700;
+    --laranjam:#a06518;
     --laranjae:#a23e00;
     --marrom:#784000;
     --vermelho:#52001f;
@@ -82,6 +84,9 @@
     &laranja{
       color:$laranja!important;
     }
+    &laranjam{
+      color:$laranjam!important;
+    }
     &laranjae{
       color:$laranjae!important;
     }
@@ -114,6 +119,9 @@
     &laranja{
       background-color:$laranja!important;
     }
+    &laranjam{
+      background-color:$laranjam!important;
+    }
     &laranjae{
       background-color:$laranjae!important;
     }
@@ -145,6 +153,9 @@
   .border-{
     &laranja{
       border-color:$laranja!important;
+    }
+    &laranjam{
+      border-color:$laranjam!important;
     }
     &laranjae{
       border-color:$laranjae!important;
@@ -276,15 +287,14 @@
   /* BOTÕES */
   .btn-primary{
     font-size: var(--font-geral);
-    border-color: $laranja;
-    background-color: $laranja;
+    border-color: $vermelho;
+    background-color: $branco;
+    background-image: url(../images/BG.jpg);
     color: $vermelho;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
       border-color: $vermelho;
-      background-color: $branco;
-      background-image: url(../images/BG.jpg);
       color: $vermelho;
     }
 
@@ -300,13 +310,13 @@
     font-size: var(--font-geral);
     border-color: $vermelho;
     background-color: $vermelho;
-    color: $branco;
+    color: $cinzac;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
       border-color: $marrom;
       background-color: $marrom;
-      color: $branco;
+      color: $cinzac;
     }
 
     &:focus-visible{

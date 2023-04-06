@@ -22,6 +22,9 @@
       font-weight: 700;
       color: var(--vermelho);
     }
+    .card-text{
+      color: var(--vermelho);
+    }
     .card{
       height: 100%;
       background: none;
@@ -30,6 +33,10 @@
     .card-footer{
       border-color: var(--vermelho);
       background-color: var(--vermelho);
+    }
+    .icone{
+      max-width: 100px;
+      mix-blend-mode: color-burn;
     }
   }
   #cardapio{
