@@ -170,18 +170,10 @@
   width: 100%;
   z-index: 100;
 }
-#laudes #tabs .shadow {
-  position: relative;
-}
-#laudes #tabs .shadow:after {
-  content: "";
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#52001f+0,52001f+100&0+0,1+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, transparent 0%, var(--vermelho) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+#laudes #tabs .seta {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 70px;
-  height: 100%;
+  right: 12px;
+  bottom: 8px;
 }
 #laudes #tabs .nav {
   flex-flow: nowrap;

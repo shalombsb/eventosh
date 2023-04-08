@@ -211,24 +211,12 @@
       top: 55px;
       width: 100%;
       z-index: 100;
-
-      .shadow{
-        position: relative;
-        &:after{
-          content: '';
-          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#52001f+0,52001f+100&0+0,1+100 */
-          background: -moz-linear-gradient(left,  transparent 0%, $vermelho 50%); /* FF3.6-15 */
-          background: -webkit-linear-gradient(left,  transparent 0%,$vermelho 50%); /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to right,  transparent 0%,$vermelho 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          
-
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 70px;
-          height: 100%;
-        }
+      .seta{
+        position: absolute;
+        right: 12px;
+        bottom: 8px;
       }
+
       .nav{
         flex-flow: nowrap;
         overflow: scroll;
