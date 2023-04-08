@@ -234,7 +234,7 @@
         overflow: scroll;
       }
       .nav-link{
-        color: $branco;
+        color: white;
         white-space: nowrap;
         &.active{
           background: $laranja;
@@ -249,14 +249,13 @@
       margin: auto;
       padding: 1.5rem 2rem;
       padding-bottom: 0.5rem;
-      background-color: rgba($color: #fff, $alpha: .3);
-      background: white;
+      background-color: rgba($color: #fff, $alpha: .4);
       border-radius: .3rem;
 
       p{
-        color: $laranja;
+        color: $vermelho;
         span{
-          color: $vermelho;
+          color: $laranja;
         }
       }
     }
