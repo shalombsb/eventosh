@@ -26,6 +26,10 @@
   max-width: 130px;
   mix-blend-mode: color-burn;
 }
+#home .icone-text {
+  max-width: 160px;
+  mix-blend-mode: color-burn;
+}
 
 #cardapio .height-184 {
   height: 184px;
@@ -146,6 +150,78 @@
 #doe .copy-html.success::before {
   content: "Pix copiado com sucesso!" !important;
   padding: 0 10px;
+}
+
+#laudes .space {
+  height: 72px;
+}
+#laudes .icone {
+  max-width: 130px;
+  mix-blend-mode: color-burn;
+}
+#laudes .icone-text {
+  max-width: 160px;
+  mix-blend-mode: color-burn;
+}
+#laudes #tabs {
+  background: var(--vermelho);
+  position: fixed;
+  top: 55px;
+  width: 100%;
+  z-index: 100;
+}
+#laudes #tabs .shadow {
+  position: relative;
+}
+#laudes #tabs .shadow:after {
+  content: "";
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#52001f+0,52001f+100&0+0,1+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, transparent 0%, var(--vermelho) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 100%;
+}
+#laudes #tabs .nav {
+  flex-flow: nowrap;
+  overflow: scroll;
+}
+#laudes #tabs .nav-link {
+  color: var(--branco);
+  white-space: nowrap;
+}
+#laudes #tabs .nav-link.active {
+  background: var(--laranja);
+  border: var(--laranja);
+}
+#laudes .texto {
+  margin: auto;
+  padding: 1.5rem 2rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  background: white;
+  border-radius: 0.3rem;
+}
+#laudes .texto p {
+  color: var(--laranja);
+}
+#laudes .texto p span {
+  color: var(--vermelho);
+}
+#laudes .title {
+  font-weight: 800;
+  text-align: center;
+}
+#laudes .subtitle {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8rem;
+}
+#laudes hr {
+  border: 1px solid var(--laranja);
+  z-index: -1;
 }
 
 #dados #navbar-dados .navbar-brand img {
