@@ -1,16 +1,10 @@
 @import url(../fontes/stylesheet.css);
 
-  $primary-200:var(--primary-200);
-  $primary-300:var(--primary-300);
-  $primary:var(--primary);
-  $primary-500:var(--primary-500);
-  $primary-600:var(--primary-600);
-  $secondary-200:var(--secondary-200);
-  $secondary-300:var(--secondary-300);
-  $secondary:var(--secondary);
-  $secondary-500:var(--secondary-500);
-  $secondary-600:var(--secondary-600);
-  $accent:var(--accent);
+  $laranja:var(--laranja);
+  $laranjam:var(--laranjam);
+  $laranjae:var(--laranjae);
+  $marrom:var(--marrom);
+  $vermelho:var(--vermelho);
   $branco:var(--branco);
   $cinzac:var(--cinzac);
   $cinzam:var(--cinzam);
@@ -19,18 +13,12 @@
   $sombra:var(--sombra);
   $transparente:var(--transparente);
 
-  :root{   
-    --primary-200:#de7f05;
-    --primary-300:#d56f03; 
-    --primary:#d05f00;
-    --primary-500:#cd5200;
-    --primary-600:#ad4001;
-    --secondary-200:#f3d05d;
-    --secondary-300:#e6bc1a;
-    --secondary:#e8b110;
-    --secondary-500:#e19401;
-    --secondary-600:#e49713;
-    --accent:#4d8cdb;
+  :root{    
+    --laranja:#b27700;
+    --laranjam:#a06518;
+    --laranjae:#a23e00;
+    --marrom:#784000;
+    --vermelho:#52001f;
     --branco:#d0ccc5;
     --cinzac:#F9F9F9;
     --cinzam:#D1D1D1;
@@ -78,7 +66,7 @@
     width: 100vw;
     font-family: 'Helvetica', sans-serif; 
     overflow-x: hidden;
-    color: $primary!important;
+    color: $laranja!important;
   }
 
   .vanroot{
@@ -93,38 +81,20 @@
   /* COR DAS FONTES */
   .c-{
 
-    &primary-200{
-      color:$primary-200!important;
+    &laranja{
+      color:$laranja!important;
     }
-    &primary-300{
-      color:$primary-300!important;
+    &laranjam{
+      color:$laranjam!important;
     }
-    &primary{
-      color:$primary!important;
+    &laranjae{
+      color:$laranjae!important;
     }
-    &primary-500{
-      color:$primary-500!important;
+    &marrom{
+      color:$marrom!important;
     }
-    &primary-600{
-      color:$primary-600!important;
-    }
-    &secondary-200{
-      color:$secondary-200!important;
-    }
-    &secondary-300{
-      color:$secondary-300!important;
-    }
-    &secondary{
-      color:$secondary!important;
-    }
-    &secondary-500{
-      color:$secondary-500!important;
-    }
-    &secondary-600{
-      color:$secondary-600!important;
-    }
-    &accent{
-      color:$accent!important;
+    &vermelho{
+      color:$vermelho!important;
     }
     &branco{
       color:$branco!important;
@@ -146,20 +116,20 @@
   /* COR DOS FUNDOS */
   .b-{
 
-    &primary{
-      background-color:$primary!important;
+    &laranja{
+      background-color:$laranja!important;
     }
-    &primary-500{
-      background-color:$primary-500!important;
+    &laranjam{
+      background-color:$laranjam!important;
     }
-    &primary-600{
-      background-color:$primary-600!important;
+    &laranjae{
+      background-color:$laranjae!important;
     }
-    &secondary{
-      background-color:$secondary!important;
+    &marrom{
+      background-color:$marrom!important;
     }
-    &accent{
-      background-color:$accent!important;
+    &vermelho{
+      background-color:$vermelho!important;
     }
     &branco{
       background-color:$branco!important;
@@ -181,20 +151,20 @@
   /* COR DA BORDA */
   /* PESO DA BORDA */
   .border-{
-    &primary{
-      border-color:$primary!important;
+    &laranja{
+      border-color:$laranja!important;
     }
-    &primary-500{
-      border-color:$primary-500!important;
+    &laranjam{
+      border-color:$laranjam!important;
     }
-    &primary-600{
-      border-color:$primary-600!important;
+    &laranjae{
+      border-color:$laranjae!important;
     }
-    &secondary{
-      border-color:$secondary!important;
+    &marrom{
+      border-color:$marrom!important;
     }
-    &accent{
-      border-color:$accent!important;
+    &vermelho{
+      border-color:$vermelho!important;
     }
     &branco{
       border-color:$branco!important;
@@ -317,35 +287,35 @@
   /* BOTÕES */
   .btn-primary{
     font-size: var(--font-geral);
-    border-color: $accent;
+    border-color: $vermelho;
     background-color: $branco;
     background-image: url(../images/BG.jpg);
-    color: $accent;
+    color: $vermelho;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      border-color: $accent;
-      color: $accent;
+      border-color: $vermelho;
+      color: $vermelho;
     }
 
     &:focus-visible{
-      outline: $accent auto 1px;
+      outline: $vermelho auto 1px;
     }
 
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $accent;
+      box-shadow: 0 0 0 0rem $vermelho;
     }
   }
   .btn-secondary{
     font-size: var(--font-geral);
-    border-color: $accent;
-    background-color: $accent;
+    border-color: $vermelho;
+    background-color: $vermelho;
     color: $cinzac;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      border-color: $secondary;
-      background-color: $secondary;
+      border-color: $marrom;
+      background-color: $marrom;
       color: $cinzac;
     }
 
@@ -354,31 +324,31 @@
     }
 
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $accent;
+      box-shadow: 0 0 0 0rem $vermelho;
     }
   }
   .btn-outline-primary{
     font-size: var(--font-geral);
-    border-color: $primary;
-    color: $secondary;
+    border-color: $laranja;
+    color: $marrom;
     transition: .5s all ease-in-out;
 
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      background-color: $primary;
-      border-color: $primary;
+      background-color: $laranja;
+      border-color: $laranja;
       color: $branco;
       font-size: calc(var(--font-geral) + .1rem);
     }
 
     &:focus-visible{
-      border: 1px solid $secondary;
+      border: 1px solid $marrom;
     }
     
     &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $accent;
+      box-shadow: 0 0 0 0rem $vermelho;
     }
     &.active:focus{
-      border: 1px solid $secondary;
+      border: 1px solid $marrom;
     }
   }
 
@@ -406,7 +376,7 @@
     box-shadow: 0 16px 16px $sombra, 0 8px 8px $sombra, 0 4px 4px $sombra, 0 0 10px $sombra;
 
     &:hover{
-      border: 1px solid $primary!important;
+      border: 1px solid $laranja!important;
     }
     .card-footer{
       text-align: end;
@@ -421,7 +391,7 @@
       mix-blend-mode: color-burn;
     }
     .nav-link{
-      color: $primary!important;
+      color: $laranja!important;
       text-align: end;
   
       &:hover{

@@ -1,17 +1,11 @@
 @charset "UTF-8";
 @import url(../fontes/stylesheet.css);
 :root {
-  --primary-200:#de7f05;
-  --primary-300:#d56f03;
-  --primary:#d05f00;
-  --primary-500:#cd5200;
-  --primary-600:#ad4001;
-  --secondary-200:#f3d05d;
-  --secondary-300:#e6bc1a;
-  --secondary:#e8b110;
-  --secondary-500:#e19401;
-  --secondary-600:#e49713;
-  --accent:#4d8cdb;
+  --laranja:#b27700;
+  --laranjam:#a06518;
+  --laranjae:#a23e00;
+  --marrom:#784000;
+  --vermelho:#52001f;
   --branco:#d0ccc5;
   --cinzac:#F9F9F9;
   --cinzam:#D1D1D1;
@@ -56,7 +50,7 @@ body {
   width: 100vw;
   font-family: "Helvetica", sans-serif;
   overflow-x: hidden;
-  color: var(--primary) !important;
+  color: var(--laranja) !important;
 }
 
 .vanroot {
@@ -68,38 +62,20 @@ body {
 }
 
 /* COR DAS FONTES */
-.c-primary-200 {
-  color: var(--primary-200) !important;
+.c-laranja {
+  color: var(--laranja) !important;
 }
-.c-primary-300 {
-  color: var(--primary-300) !important;
+.c-laranjam {
+  color: var(--laranjam) !important;
 }
-.c-primary {
-  color: var(--primary) !important;
+.c-laranjae {
+  color: var(--laranjae) !important;
 }
-.c-primary-500 {
-  color: var(--primary-500) !important;
+.c-marrom {
+  color: var(--marrom) !important;
 }
-.c-primary-600 {
-  color: var(--primary-600) !important;
-}
-.c-secondary-200 {
-  color: var(--secondary-200) !important;
-}
-.c-secondary-300 {
-  color: var(--secondary-300) !important;
-}
-.c-secondary {
-  color: var(--secondary) !important;
-}
-.c-secondary-500 {
-  color: var(--secondary-500) !important;
-}
-.c-secondary-600 {
-  color: var(--secondary-600) !important;
-}
-.c-accent {
-  color: var(--accent) !important;
+.c-vermelho {
+  color: var(--vermelho) !important;
 }
 .c-branco {
   color: var(--branco) !important;
@@ -118,20 +94,20 @@ body {
 }
 
 /* COR DOS FUNDOS */
-.b-primary {
-  background-color: var(--primary) !important;
+.b-laranja {
+  background-color: var(--laranja) !important;
 }
-.b-primary-500 {
-  background-color: var(--primary-500) !important;
+.b-laranjam {
+  background-color: var(--laranjam) !important;
 }
-.b-primary-600 {
-  background-color: var(--primary-600) !important;
+.b-laranjae {
+  background-color: var(--laranjae) !important;
 }
-.b-secondary {
-  background-color: var(--secondary) !important;
+.b-marrom {
+  background-color: var(--marrom) !important;
 }
-.b-accent {
-  background-color: var(--accent) !important;
+.b-vermelho {
+  background-color: var(--vermelho) !important;
 }
 .b-branco {
   background-color: var(--branco) !important;
@@ -151,20 +127,20 @@ body {
 
 /* COR DA BORDA */
 /* PESO DA BORDA */
-.border-primary {
-  border-color: var(--primary) !important;
+.border-laranja {
+  border-color: var(--laranja) !important;
 }
-.border-primary-500 {
-  border-color: var(--primary-500) !important;
+.border-laranjam {
+  border-color: var(--laranjam) !important;
 }
-.border-primary-600 {
-  border-color: var(--primary-600) !important;
+.border-laranjae {
+  border-color: var(--laranjae) !important;
 }
-.border-secondary {
-  border-color: var(--secondary) !important;
+.border-marrom {
+  border-color: var(--marrom) !important;
 }
-.border-accent {
-  border-color: var(--accent) !important;
+.border-vermelho {
+  border-color: var(--vermelho) !important;
 }
 .border-branco {
   border-color: var(--branco) !important;
@@ -280,62 +256,62 @@ body {
 /* BOTÕES */
 .btn-primary {
   font-size: var(--font-geral);
-  border-color: var(--accent);
+  border-color: var(--vermelho);
   background-color: var(--branco);
   background-image: url(../images/BG.jpg);
-  color: var(--accent);
+  color: var(--vermelho);
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--vermelho);
+  color: var(--vermelho);
 }
 .btn-primary:focus-visible {
-  outline: var(--accent) auto 1px;
+  outline: var(--vermelho) auto 1px;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0rem var(--accent);
+  box-shadow: 0 0 0 0rem var(--vermelho);
 }
 
 .btn-secondary {
   font-size: var(--font-geral);
-  border-color: var(--accent);
-  background-color: var(--accent);
+  border-color: var(--vermelho);
+  background-color: var(--vermelho);
   color: var(--cinzac);
   transition: 0.5s all ease-in-out;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:hover {
-  border-color: var(--secondary);
-  background-color: var(--secondary);
+  border-color: var(--marrom);
+  background-color: var(--marrom);
   color: var(--cinzac);
 }
 .btn-secondary:focus-visible {
   outline: 0px;
 }
 .btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0rem var(--accent);
+  box-shadow: 0 0 0 0rem var(--vermelho);
 }
 
 .btn-outline-primary {
   font-size: var(--font-geral);
-  border-color: var(--primary);
-  color: var(--secondary);
+  border-color: var(--laranja);
+  color: var(--marrom);
   transition: 0.5s all ease-in-out;
 }
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle, .btn-outline-primary:hover {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: var(--laranja);
+  border-color: var(--laranja);
   color: var(--branco);
   font-size: calc(var(--font-geral) + 0.1rem);
 }
 .btn-outline-primary:focus-visible {
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--marrom);
 }
 .btn-outline-primary.focus, .btn-outline-primary:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0rem var(--accent);
+  box-shadow: 0 0 0 0rem var(--vermelho);
 }
 .btn-outline-primary.active:focus {
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--marrom);
 }
 
 .btn-click {
@@ -359,7 +335,7 @@ body {
   box-shadow: 0 16px 16px var(--sombra), 0 8px 8px var(--sombra), 0 4px 4px var(--sombra), 0 0 10px var(--sombra);
 }
 .card:hover {
-  border: 1px solid var(--primary) !important;
+  border: 1px solid var(--laranja) !important;
 }
 .card .card-footer {
   text-align: end;
@@ -373,7 +349,7 @@ body {
   mix-blend-mode: color-burn;
 }
 #menu .nav-link {
-  color: var(--primary) !important;
+  color: var(--laranja) !important;
   text-align: end;
 }
 #menu .nav-link:hover {
