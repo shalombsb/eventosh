@@ -38,7 +38,8 @@
     --preto:#000;
     --sombra:#3c3c3c0d;
     --transparente:rgba(0,0,0,0);
-
+    --font-primary:'Louis', sans-serif; 
+    --font-secondary:'Urban', sans-serif; 
   }
 
   
@@ -47,6 +48,10 @@
   GERAIS
   --------------------------------
   */
+
+  /*
+
+  SCROLLBAR
   * {
     
     scrollbar-width: none;
@@ -56,7 +61,7 @@
   *::-webkit-scrollbar {
     display: none;
     width: 0px;
-    height: 0px; /* A altura só é vista quando a rolagem é horizontal */
+    height: 0px; // A altura só é vista quando a rolagem é horizontal 
   }
   
   *::-webkit-scrollbar-track {
@@ -67,6 +72,7 @@
   *::-webkit-scrollbar-thumb {
     background-color: transparent;
   }
+  */
 
   html{
     width: 100vw;
@@ -76,17 +82,17 @@
 
   body {
     width: 100vw;
-    font-family: 'Helvetica', sans-serif; 
+    font-family: var(--font-primary);
     overflow-x: hidden;
     color: $primary!important;
   }
 
-  .vanroot{
-    font-family: 'Vanroot', sans-serif; 
+  .font-primary{
+    font-family: var(--font-primary); 
   }
 
-  .aubrey{
-    font-family: 'Aubrey', sans-serif; 
+  .font-secondary{
+    font-family: var(--font-secondary); 
   }
 
   
@@ -144,7 +150,7 @@
   }
 
   /* COR DOS FUNDOS */
-  .b-{
+  .bg-{
 
     &primary{
       background-color:$primary!important;
@@ -283,18 +289,20 @@
 
 
   /* ALINHAMENTO */
-  .s-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .v-center{
-    display: flex;
-    align-items: center;
-  }
-  .h-center{
-    display: flex;
-    justify-content: center;
+  .center-{
+    &s{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .v{
+      display: flex;
+      align-items: center;
+    }
+    .h{
+      display: flex;
+      justify-content: center;
+    }
   }
 
   /* ALTURA */
@@ -315,85 +323,87 @@
 
 
   /* BOTÕES */
-  .btn-primary{
-    font-size: var(--font-geral);
-    border-color: $accent;
-    background-color: $branco;
-    background-image: url(../images/BG.jpg);
-    color: $accent;
-    transition: .5s all ease-in-out;
-
-    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+  .btn-{
+    &primary{
+      font-size: var(--font-geral);
       border-color: $accent;
+      background-color: $branco;
+      background-image: url(../images/BG.jpg);
       color: $accent;
-    }
-
-    &:focus-visible{
-      outline: $accent auto 1px;
-    }
-
-    &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $accent;
-    }
-  }
-  .btn-secondary{
-    font-size: var(--font-geral);
-    border-color: $accent;
-    background-color: $accent;
-    color: $cinzac;
-    transition: .5s all ease-in-out;
-
-    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      border-color: $secondary;
-      background-color: $secondary;
-      color: $cinzac;
-    }
-
-    &:focus-visible{
-      outline: 0px;
-    }
-
-    &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $accent;
-    }
-  }
-  .btn-outline-primary{
-    font-size: var(--font-geral);
-    border-color: $primary;
-    color: $secondary;
-    transition: .5s all ease-in-out;
-
-    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
-      background-color: $primary;
-      border-color: $primary;
-      color: $branco;
-      font-size: calc(var(--font-geral) + .1rem);
-    }
-
-    &:focus-visible{
-      border: 1px solid $secondary;
-    }
-    
-    &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-      box-shadow: 0 0 0 0rem $accent;
-    }
-    &.active:focus{
-      border: 1px solid $secondary;
-    }
-  }
-
-  .btn-click{
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-    transition:all 0.3s ease-in-out;
-
-    &:hover{
-      transform: translateX(2px) translateY(2px);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
+      transition: .5s all ease-in-out;
   
-    &:active{
-      transform: translateX(4px) translateY(4px);
-      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+      &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+        border-color: $accent;
+        color: $accent;
+      }
+  
+      &:focus-visible{
+        outline: $accent auto 1px;
+      }
+  
+      &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+        box-shadow: 0 0 0 0rem $accent;
+      }
+    }
+    &secondary{
+      font-size: var(--font-geral);
+      border-color: $accent;
+      background-color: $accent;
+      color: $cinzac;
+      transition: .5s all ease-in-out;
+  
+      &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+        border-color: $secondary;
+        background-color: $secondary;
+        color: $cinzac;
+      }
+  
+      &:focus-visible{
+        outline: 0px;
+      }
+  
+      &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+        box-shadow: 0 0 0 0rem $accent;
+      }
+    }
+    &outline-primary{
+      font-size: var(--font-geral);
+      border-color: $primary;
+      color: $secondary;
+      transition: .5s all ease-in-out;
+  
+      &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle, &:hover{
+        background-color: $primary;
+        border-color: $primary;
+        color: $branco;
+        font-size: calc(var(--font-geral) + .1rem);
+      }
+  
+      &:focus-visible{
+        border: 1px solid $secondary;
+      }
+      
+      &.focus, &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+        box-shadow: 0 0 0 0rem $accent;
+      }
+      &.active:focus{
+        border: 1px solid $secondary;
+      }
+    }
+    &click{
+      box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+      transition:all 0.3s ease-in-out;
+  
+      &:hover{
+        transform: translateX(2px) translateY(2px);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+    
+      &:active{
+        transform: translateX(4px) translateY(4px);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+      }
+  
     }
 
   }
@@ -473,44 +483,46 @@
   g{
     transform: scale(.25);
   }
-}
-.preloader span{
-  background: #e1e1e1;
-  border-radius: 100%;
-  height: 60px;
-  width: 200px;
-  line-height: 60px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  color: #ffffff;
-  font-size: 24px;
-  margin: auto;
-  -webkit-animation: mymove 1.5s infinite linear;
-  animation: mymove 1.5s infinite linear;
-}
-.preloader span img{
-  margin-top: 0px;
-}
-.preloader span p{
-  color:#5f5f5f;
-  
-}
-.content-preloader{
-  position: relative;
-  text-align: center;
-  margin-top: 15%;
-  width: 80px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.preloader .content-preloader .icone{
-  position: absolute;
-  top: 30px;
-  left: 34px;
+  span{
+    background: #e1e1e1;
+    border-radius: 100%;
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    margin: auto;
+    -webkit-animation: mymove 1.5s infinite linear;
+    animation: mymove 1.5s infinite linear;
+    img{
+      margin-top: 0px;
+    }
+    p{
+      color:#5f5f5f;
+    }
+  }
+  .content-preloader{
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 500px){
+      margin-top: 70%
+    }
+    .icone{
+      position: absolute;
+      top: 30px;
+      left: 34px;
+    }
+  }
 }
 .spinner{
   --spinner-size: 5;
@@ -523,22 +535,22 @@
   width: 1em;
   height: 1em;
   border-radius: 50%;
-}
-.spinner .line{
-  fill: none;
-  stroke: var(--line-color);
-  stroke-width: var(--ring-size);
-  opacity: var(--line-alpha);
-  stroke-linecap: round;
-  transform-origin: 50% 50%;
-  transform: rotate3d(0, 0, 1, 0deg);
-  animation: 2156ms spinner-arc ease-in-out infinite, 1829ms spinner-rotate linear infinite;
-}
-.spinner .ring{
-  fill: none;
-  stroke: var(--ring-color);
-  stroke-width: var(--ring-size);
-  opacity: var(--ring-alpha);
+  .line{
+    fill: none;
+    stroke: var(--line-color);
+    stroke-width: var(--ring-size);
+    opacity: var(--line-alpha);
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate3d(0, 0, 1, 0deg);
+    animation: 2156ms spinner-arc ease-in-out infinite, 1829ms spinner-rotate linear infinite;
+  }
+  .ring{
+    fill: none;
+    stroke: var(--ring-color);
+    stroke-width: var(--ring-size);
+    opacity: var(--ring-alpha);
+  }
 }
 @keyframes spinner-rotate{
   to{
@@ -553,8 +565,4 @@
       stroke-dasharray: 100 150; stroke-dashoffset: -140;
     }
 }
-@media (max-width: 500px){
-  .content-preloader{
-    margin-top: 70%
-  }
-}
+

@@ -19,6 +19,8 @@
   --preto:#000;
   --sombra:#3c3c3c0d;
   --transparente:rgba(0,0,0,0);
+  --font-primary:"Louis", sans-serif;
+  --font-secondary:"Urban", sans-serif;
 }
 
 /* 
@@ -26,7 +28,11 @@
 GERAIS
 --------------------------------
 */
+/*
+
+SCROLLBAR
 * {
+
   scrollbar-width: none;
   scrollbar-color: transparent;
 }
@@ -34,7 +40,7 @@ GERAIS
 *::-webkit-scrollbar {
   display: none;
   width: 0px;
-  height: 0px; /* A altura só é vista quando a rolagem é horizontal */
+  height: 0px; // A altura só é vista quando a rolagem é horizontal 
 }
 
 *::-webkit-scrollbar-track {
@@ -45,7 +51,7 @@ GERAIS
 *::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
-
+*/
 html {
   width: 100vw;
   overflow-x: hidden;
@@ -54,17 +60,17 @@ html {
 
 body {
   width: 100vw;
-  font-family: "Helvetica", sans-serif;
+  font-family: var(--font-primary);
   overflow-x: hidden;
   color: var(--primary) !important;
 }
 
-.vanroot {
-  font-family: "Vanroot", sans-serif;
+.font-primary {
+  font-family: var(--font-primary);
 }
 
-.aubrey {
-  font-family: "Aubrey", sans-serif;
+.font-secondary {
+  font-family: var(--font-secondary);
 }
 
 /* COR DAS FONTES */
@@ -118,34 +124,34 @@ body {
 }
 
 /* COR DOS FUNDOS */
-.b-primary {
+.bg-primary {
   background-color: var(--primary) !important;
 }
-.b-primary-500 {
+.bg-primary-500 {
   background-color: var(--primary-500) !important;
 }
-.b-primary-600 {
+.bg-primary-600 {
   background-color: var(--primary-600) !important;
 }
-.b-secondary {
+.bg-secondary {
   background-color: var(--secondary) !important;
 }
-.b-accent {
+.bg-accent {
   background-color: var(--accent) !important;
 }
-.b-branco {
+.bg-branco {
   background-color: var(--branco) !important;
 }
-.b-cinza {
+.bg-cinza {
   background-color: var(--cinza) !important;
 }
-.b-cinzac {
+.bg-cinzac {
   background-color: var(--cinzac) !important;
 }
-.b-cinzam {
+.bg-cinzam {
   background-color: var(--cinzam) !important;
 }
-.b-preto {
+.bg-preto {
   background-color: var(--preto) !important;
 }
 
@@ -247,18 +253,16 @@ body {
 }
 
 /* ALINHAMENTO */
-.s-center {
+.center-s {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.v-center {
+.center- .v {
   display: flex;
   align-items: center;
 }
-
-.h-center {
+.center- .h {
   display: flex;
   justify-content: center;
 }
@@ -296,7 +300,6 @@ body {
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0rem var(--accent);
 }
-
 .btn-secondary {
   font-size: var(--font-geral);
   border-color: var(--accent);
@@ -315,7 +318,6 @@ body {
 .btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0rem var(--accent);
 }
-
 .btn-outline-primary {
   font-size: var(--font-geral);
   border-color: var(--primary);
@@ -337,7 +339,6 @@ body {
 .btn-outline-primary.active:focus {
   border: 1px solid var(--secondary);
 }
-
 .btn-click {
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
@@ -412,7 +413,6 @@ footer .position-absolute {
 .preloader g {
   transform: scale(0.25);
 }
-
 .preloader span {
   background: #e1e1e1;
   border-radius: 100%;
@@ -430,16 +430,13 @@ footer .position-absolute {
   margin: auto;
   animation: mymove 1.5s infinite linear;
 }
-
 .preloader span img {
   margin-top: 0px;
 }
-
 .preloader span p {
   color: #5f5f5f;
 }
-
-.content-preloader {
+.preloader .content-preloader {
   position: relative;
   text-align: center;
   margin-top: 15%;
@@ -447,7 +444,11 @@ footer .position-absolute {
   margin-left: auto;
   margin-right: auto;
 }
-
+@media (max-width: 500px) {
+  .preloader .content-preloader {
+    margin-top: 70%;
+  }
+}
 .preloader .content-preloader .icone {
   position: absolute;
   top: 30px;
@@ -466,7 +467,6 @@ footer .position-absolute {
   height: 1em;
   border-radius: 50%;
 }
-
 .spinner .line {
   fill: none;
   stroke: var(--line-color);
@@ -477,7 +477,6 @@ footer .position-absolute {
   transform: rotate3d(0, 0, 1, 0deg);
   animation: 2156ms spinner-arc ease-in-out infinite, 1829ms spinner-rotate linear infinite;
 }
-
 .spinner .ring {
   fill: none;
   stroke: var(--ring-color);
@@ -498,10 +497,5 @@ footer .position-absolute {
   to {
     stroke-dasharray: 100 150;
     stroke-dashoffset: -140;
-  }
-}
-@media (max-width: 500px) {
-  .content-preloader {
-    margin-top: 70%;
   }
 }/*# sourceMappingURL=styles.css.map */

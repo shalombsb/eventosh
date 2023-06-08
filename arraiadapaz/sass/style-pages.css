@@ -1,34 +1,36 @@
 @import url(styles.scss);
+#divulgacao .img-logo {
+  max-width: 400px;
+  width: 100%;
+}
+
 #home .fa-solid {
   font-size: 3rem;
   margin-right: 1rem;
-  color: var(--laranjae);
-  mix-blend-mode: color-burn;
+  color: var(--primary-500);
 }
 #home .card-title {
   font-weight: 700;
-  color: var(--vermelho);
+  color: var(--accent);
   margin-bottom: 0;
 }
 #home .card-text {
-  color: var(--vermelho);
+  color: var(--accent);
 }
 #home .card {
   height: 100%;
   background: none;
-  border-color: var(--vermelho);
+  border-color: var(--accent);
 }
 #home .card-footer {
-  border-color: var(--vermelho);
-  background-color: var(--vermelho);
+  border-color: var(--accent);
+  background-color: var(--accent);
 }
 #home .icone {
   max-width: 130px;
-  mix-blend-mode: color-burn;
 }
 #home .icone-text {
   max-width: 160px;
-  mix-blend-mode: color-burn;
 }
 
 #cardapio .height-184 {
@@ -37,7 +39,7 @@
 #cardapio .card {
   height: 100%;
   background: none;
-  border-color: var(--vermelho);
+  border-color: var(--accent);
 }
 #cardapio .card-body, #cardapio .card-footer {
   display: flex;
@@ -51,14 +53,13 @@
   font-weight: 600;
 }
 #cardapio .card-title {
-  color: var(--marrom);
+  color: var(--secondary);
 }
 #cardapio .card-subtitle {
-  color: var(--laranjae);
-  mix-blend-mode: color-burn;
+  color: var(--primary-500);
 }
 #cardapio .card-footer {
-  border-color: var(--vermelho);
+  border-color: var(--accent);
 }
 #cardapio .card-text {
   margin-bottom: 0;
@@ -73,8 +74,8 @@
 }
 #cardapio .quant:not(:disabled):not(.disabled).active, #cardapio .quant:not(:disabled):not(.disabled):active, .show > #cardapio .quant.dropdown-toggle, #cardapio .quant:hover {
   background-color: transparent;
-  border-color: var(--laranja);
-  color: var(--marrom);
+  border-color: var(--primary);
+  color: var(--secondary);
   font-size: 100%;
 }
 #cardapio .small, #cardapio small {
@@ -88,7 +89,7 @@
   border-radius: 35px;
   display: flex;
   align-items: end;
-  background-color: var(--vermelho);
+  background-color: var(--accent);
 }
 #cardapio .carrinho .carrinho-infos {
   padding: 0rem;
@@ -137,7 +138,7 @@
 }
 
 #doe .card-text {
-  color: var(--marrom);
+  color: var(--secondary);
   -webkit-user-select: all;
      -moz-user-select: all;
           user-select: all;
@@ -157,14 +158,12 @@
 }
 #laudes .icone {
   max-width: 130px;
-  mix-blend-mode: color-burn;
 }
 #laudes .icone-text {
   max-width: 160px;
-  mix-blend-mode: color-burn;
 }
 #laudes #tabs {
-  background: var(--vermelho);
+  background: var(--accent);
   position: fixed;
   top: 55px;
   width: 100%;
@@ -184,8 +183,8 @@
   white-space: nowrap;
 }
 #laudes #tabs .nav-link.active {
-  background: var(--laranja);
-  border: var(--laranja);
+  background: var(--primary);
+  border: var(--primary);
 }
 #laudes .texto {
   margin: auto;
@@ -195,10 +194,10 @@
   border-radius: 0.3rem;
 }
 #laudes .texto p {
-  color: var(--vermelho);
+  color: var(--accent);
 }
 #laudes .texto p span {
-  color: var(--laranja);
+  color: var(--primary);
 }
 #laudes .title {
   font-weight: 800;
@@ -211,7 +210,7 @@
   font-size: 0.8rem;
 }
 #laudes hr {
-  border: 1px solid var(--laranja);
+  border: 1px solid var(--primary);
   z-index: -1;
 }
 
@@ -240,12 +239,12 @@
   margin: 0 5px;
 }
 #dados #navbar-dados .nav-item .nav-link:hover {
-  border: 1px solid var(--laranja);
+  border: 1px solid var(--primary);
   filter: none;
 }
 #dados #navbar-dados .nav-item .nav-link.active {
-  background: var(--marrom);
-  border: 1px solid var(--marrom);
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
   color: var(--branco);
 }
 #dados .height-106 {
@@ -273,8 +272,8 @@
   margin: 0;
 }
 #dados .btn-outline-secondary {
-  border: 1px solid var(--laranja);
-  color: var(--laranja);
+  border: 1px solid var(--primary);
+  color: var(--primary);
   transition: 0.3s all ease-in-out;
   margin: 0 5px;
 }
@@ -282,7 +281,7 @@
   color: var(--branco);
 }
 #dados .btn-outline-secondary.active {
-  background: var(--laranja);
+  background: var(--primary);
   color: var(--branco);
 }
 #dados .scroll {
@@ -302,19 +301,19 @@
 #dados .card .nav-item .nav-link {
   background-color: var(--transparente);
   width: 100%;
-  color: var(--laranja);
+  color: var(--primary);
   font-weight: bold;
   border-radius: 0;
   border-bottom: 2px solid var(--transparente);
   transition: 0.3s all ease-in-out;
 }
 #dados .card .nav-item .nav-link.active {
-  color: var(--marrom);
+  color: var(--secondary);
   background-color: var(--transparente);
-  border-bottom: 2px solid var(--marrom) !important;
+  border-bottom: 2px solid var(--secondary) !important;
 }
 #dados .card .nav-item .nav-link:hover {
-  border-bottom: 2px solid var(--laranja);
+  border-bottom: 2px solid var(--primary);
 }
 #dados .dados h1, #dados .dados h2, #dados .dados h3, #dados .dados h4, #dados .dados h5, #dados .dados h6 {
   margin: 0;
@@ -327,7 +326,7 @@
 }
 #dados .dados .icon .fa-solid {
   font-size: 4.25rem;
-  color: var(--marrom);
+  color: var(--secondary);
 }
 #dados .dados .pequeno {
   font-size: 90%;
@@ -337,8 +336,8 @@
   margin-right: 0.25rem;
 }
 #dados .dados h5 {
-  color: var(--laranjae);
-  border-bottom: 2px solid var(--laranjae);
+  color: var(--primary-500);
+  border-bottom: 2px solid var(--primary-500);
   padding-left: 32.35px;
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
@@ -346,12 +345,12 @@
 #dados .dados .small, #dados .dados small {
   font-size: 0.75em;
 }
-#dados .dados p.vermelho i {
-  color: var(--marrom) !important;
+#dados .dados p.accent i {
+  color: var(--secondary) !important;
 }
 #dados .dados li span, #dados .dados .small span {
-  color: var(--laranjae);
+  color: var(--primary-500);
 }
 #dados .dados li::marker {
-  color: var(--marrom);
+  color: var(--secondary);
 }/*# sourceMappingURL=style-pages.css.map */
