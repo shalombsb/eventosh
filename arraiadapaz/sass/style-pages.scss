@@ -20,10 +20,25 @@
   $transparente:var(--transparente);
 
   #divulgacao{
-
+    background-color: $primary;
     .img-logo{
       max-width: 400px;
       width: 100%;
+    }
+
+    .element{
+      position: absolute;
+      &.element1{
+        right: 10%;
+        bottom: -8%;
+
+        img{
+          width: 150px;
+          @media (max-width:480px) {
+            width: 100px;
+          }
+        }
+      }
     }
   }
 

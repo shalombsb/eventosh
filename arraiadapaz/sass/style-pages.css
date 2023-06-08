@@ -1,7 +1,25 @@
 @import url(styles.scss);
+#divulgacao {
+  background-color: var(--primary);
+}
 #divulgacao .img-logo {
   max-width: 400px;
   width: 100%;
+}
+#divulgacao .element {
+  position: absolute;
+}
+#divulgacao .element.element1 {
+  right: 10%;
+  bottom: -8%;
+}
+#divulgacao .element.element1 img {
+  width: 150px;
+}
+@media (max-width: 480px) {
+  #divulgacao .element.element1 img {
+    width: 100px;
+  }
 }
 
 #home .fa-solid {
