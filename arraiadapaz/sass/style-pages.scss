@@ -20,21 +20,39 @@
   $transparente:var(--transparente);
 
   #divulgacao{
+    position: relative;
     background-color: $primary;
     .img-logo{
       max-width: 400px;
-      width: 100%;
+      width: 80%;
     }
 
     .element{
       position: absolute;
-      &.element1{
-        right: 10%;
+      &.balao1{
+        left: 10%;
         bottom: -8%;
+        @media (max-width:675px) {
+          left: 5%;
+          bottom: -15%;
+        }
+        img{
+          width: 150px;
+          @media (max-width:675px) {
+            width: 100px;
+          }
+        }
+      }
+      &.balao2{
+        right: 10%;
+        top: 2%;
+        @media (max-width:675px) {
+          right: 5%;
+        }
 
         img{
           width: 150px;
-          @media (max-width:480px) {
+          @media (max-width:675px) {
             width: 100px;
           }
         }

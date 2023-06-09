@@ -1,23 +1,47 @@
 @import url(styles.scss);
 #divulgacao {
+  position: relative;
   background-color: var(--primary);
 }
 #divulgacao .img-logo {
   max-width: 400px;
-  width: 100%;
+  width: 80%;
 }
 #divulgacao .element {
   position: absolute;
 }
-#divulgacao .element.element1 {
-  right: 10%;
+#divulgacao .element.balao1 {
+  left: 10%;
   bottom: -8%;
 }
-#divulgacao .element.element1 img {
+@media (max-width: 675px) {
+  #divulgacao .element.balao1 {
+    left: 5%;
+    bottom: -15%;
+  }
+}
+#divulgacao .element.balao1 img {
   width: 150px;
 }
-@media (max-width: 480px) {
-  #divulgacao .element.element1 img {
+@media (max-width: 675px) {
+  #divulgacao .element.balao1 img {
+    width: 100px;
+  }
+}
+#divulgacao .element.balao2 {
+  right: 10%;
+  top: 2%;
+}
+@media (max-width: 675px) {
+  #divulgacao .element.balao2 {
+    right: 5%;
+  }
+}
+#divulgacao .element.balao2 img {
+  width: 150px;
+}
+@media (max-width: 675px) {
+  #divulgacao .element.balao2 img {
     width: 100px;
   }
 }
