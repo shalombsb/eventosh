@@ -87,11 +87,11 @@
     color: $primary!important;
   }
 
-  .font-primary{
+  .ft-pri{
     font-family: var(--font-primary); 
   }
 
-  .font-secondary{
+  .ft-sec{
     font-family: var(--font-secondary); 
   }
 
@@ -436,6 +436,7 @@
 
   .bg{
     background-image: url(../images/bg.png);
+    background-attachment: fixed;
   }
   
 

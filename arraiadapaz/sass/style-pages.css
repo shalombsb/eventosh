@@ -7,6 +7,9 @@
   max-width: 400px;
   width: 80%;
 }
+#divulgacao .gratuita {
+  width: 220px;
+}
 #divulgacao .element {
   position: absolute;
 }
