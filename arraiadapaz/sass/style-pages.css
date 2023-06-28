@@ -10,6 +10,10 @@
 #divulgacao .gratuita {
   width: 220px;
 }
+#divulgacao .link {
+  text-decoration: none;
+  color: var(--branco) !important;
+}
 #divulgacao .element {
   position: absolute;
 }

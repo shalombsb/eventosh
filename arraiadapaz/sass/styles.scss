@@ -87,6 +87,7 @@
     color: $primary!important;
   }
 
+  /* FAMÍLIAS DAS FONTES */
   .ft-pri{
     font-family: var(--font-primary); 
   }
@@ -95,6 +96,16 @@
     font-family: var(--font-secondary); 
   }
 
+  /* TAMANHOS DAS FONTES */
+
+  h{
+    &1{
+      font-size: 3rem;
+    }
+    &1{
+      font-size: 3rem;
+    }
+  }
   
   /* COR DAS FONTES */
   .c-{
@@ -307,6 +318,9 @@
 
   /* ALTURA */
   .h-{
+    &fit{
+      height: fit-content;
+    }
     &100{
       height: 100%;
     }
@@ -318,6 +332,25 @@
     }
     &25{
       height: 25%;
+    }
+  }
+
+  /* LARGURA */
+  .w-{
+    &fit{
+      width: fit-content;
+    }
+    &100{
+      width: 100%;
+    }
+    &75{
+      width: 75%;
+    }
+    &50{
+      width: 50%;
+    }
+    &25{
+      width: 25%;
     }
   }
 
