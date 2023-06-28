@@ -438,6 +438,16 @@ footer #shalom {
 footer #shalom .logo-color {
   fill: var(--branco);
 }
+footer .btn {
+  font-size: 0.8rem;
+}
+footer #insta, footer #comshalom {
+  height: 16px;
+  width: 16px;
+}
+footer #insta path, footer #comshalom path {
+  fill: var(--branco);
+}
 footer .position-absolute {
   bottom: 0;
 }

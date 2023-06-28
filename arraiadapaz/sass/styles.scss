@@ -500,12 +500,23 @@
   
   footer{
   position: relative;
-  #shalom{
-    height: 40px;
-    .logo-color{
-      fill: $branco;
+    #shalom{
+      height: 40px;
+      .logo-color{
+        fill: $branco;
+      }
     }
-  }
+    .btn{
+      font-size: .8rem;
+    }
+    #insta, #comshalom{
+      height: 16px;
+      width: 16px;
+      path{
+        fill: $branco;
+      }
+    }
+    
     .position-absolute{
       bottom: 0;
     }
