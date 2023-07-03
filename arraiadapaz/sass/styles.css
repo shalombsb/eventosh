@@ -267,11 +267,11 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.center- .v {
+.center-v {
   display: flex;
   align-items: center;
 }
-.center- .h {
+.center-h {
   display: flex;
   justify-content: center;
 }
@@ -431,6 +431,12 @@ h1 {
 
 footer {
   position: relative;
+}
+footer .jijoca {
+  height: 85px;
+}
+footer .zac {
+  height: 55px;
 }
 footer #shalom {
   height: 40px;

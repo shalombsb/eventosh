@@ -306,11 +306,11 @@
       justify-content: center;
       align-items: center;
     }
-    .v{
+    &v{
       display: flex;
       align-items: center;
     }
-    .h{
+    &h{
       display: flex;
       justify-content: center;
     }
@@ -500,6 +500,14 @@
   
   footer{
   position: relative;
+    
+    .jijoca{
+      height: 85px;
+    }
+    .zac{
+      height: 55px;
+    }
+
     #shalom{
       height: 40px;
       .logo-color{
