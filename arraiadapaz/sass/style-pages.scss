@@ -121,6 +121,16 @@
     .height-70{
       height: 70px;
     }
+
+    .title{
+      height: 48px;
+      &.comidas{
+        height: 62px;
+      }
+    }
+
+
+
     .card{
       height: 100%;
       background: $branco;
@@ -269,76 +279,7 @@
 
   }
 
-  #laudes{
-    .space{
-      height: 72px;
-    }
-    .icone{
-      max-width: 130px;
-      
-    }
-    .icone-text{
-      max-width: 160px;
-      
-    }
 
-    #tabs{
-      background: $accent;
-      position: fixed;
-      top: 55px;
-      width: 100%;
-      z-index: 100;
-      .seta{
-        position: absolute;
-        right: 12px;
-        bottom: 8px;
-      }
-
-      .nav{
-        flex-flow: nowrap;
-        overflow: scroll;
-      }
-      .nav-link{
-        color: white;
-        white-space: nowrap;
-        &.active{
-          background: $primary;
-          border: $primary;
-          
-        }
-      }
-
-    }
-    
-    .texto{
-      margin: auto;
-      padding: 1.5rem 2rem;
-      padding-bottom: 0.5rem;
-      background-color: rgba($color: #fff, $alpha: .4);
-      border-radius: .3rem;
-
-      p{
-        color: $accent;
-        span{
-          color: $primary;
-        }
-      }
-    }
-    .title{
-      font-weight: 800;
-      text-align: center;
-    }
-    .subtitle{
-      font-weight: 300;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: .8rem;
-    }
-    hr{
-      border:1px solid $primary;
-      z-index: -1;
-    }
-  }
 
   #dados{
     #navbar-dados{

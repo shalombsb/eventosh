@@ -96,6 +96,12 @@
 #cardapio .height-70 {
   height: 70px;
 }
+#cardapio .title {
+  height: 48px;
+}
+#cardapio .title.comidas {
+  height: 62px;
+}
 #cardapio .card {
   height: 100%;
   background: var(--branco);
@@ -217,67 +223,6 @@
 #doe .copy-html.success::before {
   content: "Pix copiado com sucesso!" !important;
   padding: 0 10px;
-}
-
-#laudes .space {
-  height: 72px;
-}
-#laudes .icone {
-  max-width: 130px;
-}
-#laudes .icone-text {
-  max-width: 160px;
-}
-#laudes #tabs {
-  background: var(--accent);
-  position: fixed;
-  top: 55px;
-  width: 100%;
-  z-index: 100;
-}
-#laudes #tabs .seta {
-  position: absolute;
-  right: 12px;
-  bottom: 8px;
-}
-#laudes #tabs .nav {
-  flex-flow: nowrap;
-  overflow: scroll;
-}
-#laudes #tabs .nav-link {
-  color: white;
-  white-space: nowrap;
-}
-#laudes #tabs .nav-link.active {
-  background: var(--primary);
-  border: var(--primary);
-}
-#laudes .texto {
-  margin: auto;
-  padding: 1.5rem 2rem;
-  padding-bottom: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 0.3rem;
-}
-#laudes .texto p {
-  color: var(--accent);
-}
-#laudes .texto p span {
-  color: var(--primary);
-}
-#laudes .title {
-  font-weight: 800;
-  text-align: center;
-}
-#laudes .subtitle {
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.8rem;
-}
-#laudes hr {
-  border: 1px solid var(--primary);
-  z-index: -1;
 }
 
 #dados #navbar-dados .navbar-brand img {
