@@ -93,6 +93,9 @@
 #cardapio .height-184 {
   height: 184px;
 }
+#cardapio .height-70 {
+  height: 70px;
+}
 #cardapio .card {
   height: 100%;
   background: var(--branco);
