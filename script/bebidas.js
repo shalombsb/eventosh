@@ -5,8 +5,8 @@ $( document ).ready(function() {
     var model = "<div class='col-md-6'>"+
     "<div class='card' data-key='{id}'>"+
     "<div class='card-body'>"+
-    "<h3 class='card-title'>{produto}</h3>"+
-    "<h1 class='card-subtitle preco'>{valor}</h1>"+
+    "<h4 class='card-title'>{produto}</h4>"+
+    "<h4 class='card-subtitle preco'>{valor}</h4>"+
     "</div>"+
     "<div class='card-footer'>"+
     "<p class='card-text small'>{descricao}</p>"+
