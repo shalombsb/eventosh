@@ -73,6 +73,31 @@
       }
     }
 
+    #programacao{
+
+      .table{
+        border-spacing: 3px;
+        border-collapse: separate;
+        vertical-align: middle;
+        text-align: center;
+        
+        th,td{
+          border-radius: .25rem;
+          color: $primary;
+        }
+        thead{
+          th{
+            background-color: $secondary;
+            color: $branco;
+            font-weight: 900;
+          }
+        }
+        tbody{
+
+        }
+      }
+    }
+
     #localizacao{
       .card{
         width: 100%;

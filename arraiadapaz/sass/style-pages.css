@@ -62,6 +62,21 @@
     width: 70px;
   }
 }
+#home #programacao .table {
+  border-spacing: 3px;
+  border-collapse: separate;
+  vertical-align: middle;
+  text-align: center;
+}
+#home #programacao .table th, #home #programacao .table td {
+  border-radius: 0.25rem;
+  color: var(--primary);
+}
+#home #programacao .table thead th {
+  background-color: var(--secondary);
+  color: var(--branco);
+  font-weight: 900;
+}
 #home #localizacao .card {
   width: 100%;
   max-width: 600px;
