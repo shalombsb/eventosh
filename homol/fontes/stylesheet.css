@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Louis';
+    src: url('Louis-George-Cafe-Light-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url('Louis-George-Cafe-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url('Louis-George-Cafe.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url('Louis-George-Cafe-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url('Louis-George-Cafe-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url('Louis-George-Cafe-Bold-Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Urban';
+    src: url('Urban-Brush.ttf') format('truetype');
+    font-weight: 500;
+    font-style:normal;
+}
